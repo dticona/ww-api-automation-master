@@ -199,7 +199,7 @@ namespace WhiteWingsApi.Tests
                 return client.ProcessTransaction(transactionParameters);
             });
 
-            LogStep("2 - Verify if the GetOrderStatus() method return 'Operational Hold' on OrderStatus field", () =>
+            LogStep("2 - Verify if the GetOrderStatus(), method return 'Operational Hold' on OrderStatus field", () =>
             {
                 var getOrderDetail = client.GetOrderDetail(transaction.CPASId);
                 Assert.AreEqual("Compliance Hold", getOrderDetail.OrderStatus);
