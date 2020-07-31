@@ -1,0 +1,122 @@
+{
+  "uuid": "ba22f130-ea42-47e6-9d52-66dd5c6fea27-tr-0-1142",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationFIDELITYBANKPLCNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationFIDELITYBANKPLCNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationFIDELITYBANKPLCNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4450"
+    },
+    {
+      "name": "tag",
+      "value": "C65070312"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationFIDELITYBANKPLCNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for FIDELITY BANK PLC Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationFIDELITYBANKPLCNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Fidelity Bank Plc Nigeria",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "218a1d24946e4a25a081fd6ad31a9cca-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "a60bb57094ab4f8a9f6c1ed172f785c6-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215169283,
+          "stop": 1596215171657
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  EKUE ANDREW IFALUYI",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215171657,
+          "stop": 1596215171658
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ea9d287c753d4c069d55f64f375b82af-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215169266,
+      "stop": 1596215172114
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215169266,
+  "stop": 1596215172114
+}

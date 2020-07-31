@@ -1,0 +1,122 @@
+{
+  "uuid": "5ad5daa0-b3dd-4c9a-baaf-bd3f14fbedf6-tr-0-1013",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenAgentIdFieldIsInvalid",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenAgentIdFieldIsInvalid",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenAgentIdFieldIsInvalid"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4574"
+    },
+    {
+      "name": "tag",
+      "value": "C28692876"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenAgentIdFieldIsInvalid",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed on GetFeesFXDataWithoutPayer response when AgentId field is invalid\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenAgentIdFieldIsInvalid",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeesFXDataWithoutPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "0f733a4b4e70421ba1ed50a7c58a4900-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "ab12625469f24fefa3af0e9194bc231f-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215036706,
+          "stop": 1596215037090
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Agent id.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215037090,
+          "stop": 1596215037090
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b94be9e43366475487abd43b7baad7fc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215036696,
+      "stop": 1596215037550
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215036696,
+  "stop": 1596215037550
+}

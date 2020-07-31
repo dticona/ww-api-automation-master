@@ -1,0 +1,122 @@
+{
+  "uuid": "dbdf0519-0b6b-4edc-a739-83262149d09e-tr-0-1086",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckErrorMessageInUpdateHoldStatusResponseWithInvalidCpasId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckErrorMessageInUpdateHoldStatusResponseWithInvalidCpasId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageInUpdateHoldStatusResponseWithInvalidCpasId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4612"
+    },
+    {
+      "name": "tag",
+      "value": "C23190247"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageInUpdateHoldStatusResponseWithInvalidCpasId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if 'UpdateHoldStatus()' method response shows Result Code = 6 when the Cpas ID field is invalid.\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageInUpdateHoldStatusResponseWithInvalidCpasId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `UpdateHoldStatus()` request on the soap API with invalid CpasId",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "d3d42933cb324c6dbe5608d7c4c612f1-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "b129c62cea704d06afd8644918950d21-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215098586,
+          "stop": 1596215099028
+        },
+        {
+          "name": "2 - Check that response has Result Code=6 and 'Invalid CPAS ID' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215099029,
+          "stop": 1596215099029
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e697a7dcda114141a55c929491681ec0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215098585,
+      "stop": 1596215100241
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215098585,
+  "stop": 1596215100242
+}

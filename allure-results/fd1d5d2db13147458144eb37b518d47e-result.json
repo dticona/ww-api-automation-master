@@ -1,0 +1,122 @@
+{
+  "uuid": "a871162d-f296-493d-a0fc-aaf043d0fdbc-tr-0-1116",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountZenithBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountZenithBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountZenithBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4439"
+    },
+    {
+      "name": "tag",
+      "value": "C64889586"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountZenithBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response returns the name of the account owner for ZENITH INTERNATIONAL BANK PLC Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountZenithBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Zenith International Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "4e644270aa6349318fa2f40cec2fffc3-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "b31431d991b44b318e031cd1e0c55e73-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215154843,
+          "stop": 1596215157315
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner PHILIS ELUE OGBUEBUNU",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215157315,
+          "stop": 1596215157315
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "30c41b21a47448f6b8c45cf217105cb6-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215154834,
+      "stop": 1596215157790
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215154834,
+  "stop": 1596215157790
+}

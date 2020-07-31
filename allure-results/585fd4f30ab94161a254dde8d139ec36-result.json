@@ -1,0 +1,122 @@
+{
+  "uuid": "a3c585ee-bb5e-4f0a-b025-06691938b6d0-tr-0-1050",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules.CheckAgencyHaveNotPromotionRules",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules.CheckAgencyHaveNotPromotionRules",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAgencyHaveNotPromotionRules"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4603"
+    },
+    {
+      "name": "tag",
+      "value": "C29448242"
+    }
+  ],
+  "links": [],
+  "name": "CheckAgencyHaveNotPromotionRules",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the Result Code = 4 in GetReceipientPromotionRules when the agency doesn't have Promotion Rules\n",
+  "steps": [
+    {
+      "name": "CheckAgencyHaveNotPromotionRules",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetReceipientPromotionRules()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetReceipientPromotionRules'",
+              "source": "bc8b5f389e0249a095de90a3d79791c6-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetReceipientPromotionRules'",
+              "source": "6e127169187347fcb675ea5e19559f8c-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215072478,
+          "stop": 1596215072777
+        },
+        {
+          "name": "2 - Check response shows result code = 4 and error message is 'Rule does not exists.'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215072777,
+          "stop": 1596215072777
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b5b783294bba429abf53ef942e428ddd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215072465,
+      "stop": 1596215073239
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215072465,
+  "stop": 1596215073239
+}

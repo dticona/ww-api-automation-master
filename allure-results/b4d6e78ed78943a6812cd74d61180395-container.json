@@ -1,0 +1,61 @@
+{
+  "uuid": "c36bd4a9-7383-480a-a628-a45abe5b8df3-tc-0-1033",
+  "name": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidRecipientCurrencyField",
+  "children": [
+    "49ae190b-55ec-448a-8202-c80aa25cc053-tr-0-1037"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215068556,
+      "stop": 1596215068556
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215068556,
+      "stop": 1596215068556
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215068556,
+      "stop": 1596215068556
+    }
+  ],
+  "links": [],
+  "start": 1596215067753,
+  "stop": 1596215068558
+}

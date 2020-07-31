@@ -1,0 +1,76 @@
+{
+  "uuid": "aeb7742d-6e16-454d-83c3-c682a36e4aa8-tc-0-1093",
+  "name": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidPayerId",
+  "children": [
+    "485d021b-2f34-4022-9612-651a20d250c6-tr-0-1100"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215077225,
+      "stop": 1596215077225
+    },
+    {
+      "name": "CreateNewCpasIdAndPrepareDataToProcessTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215077225,
+      "stop": 1596215077225
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215077225,
+      "stop": 1596215077225
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215077225,
+      "stop": 1596215077225
+    }
+  ],
+  "links": [],
+  "start": 1596215075956,
+  "stop": 1596215077227
+}

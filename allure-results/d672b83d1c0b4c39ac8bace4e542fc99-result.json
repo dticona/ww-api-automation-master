@@ -1,0 +1,122 @@
+{
+  "uuid": "91aaaf25-98f6-4a77-9e0a-e8635a47cb33-tr-0-1147",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetCountryList.CheckAllCountriesHasCountryStatusFieldAndCountryId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetCountryList.CheckAllCountriesHasCountryStatusFieldAndCountryId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetCountryList"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAllCountriesHasCountryStatusFieldAndCountryId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetCountryList"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4559"
+    },
+    {
+      "name": "tag",
+      "value": "C24698059"
+    }
+  ],
+  "links": [],
+  "name": "CheckAllCountriesHasCountryStatusFieldAndCountryId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if GetCountryList() response shows CountryId and CountryStatus field\n",
+  "steps": [
+    {
+      "name": "CheckAllCountriesHasCountryStatusFieldAndCountryId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetCountryList()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetCountryList'",
+              "source": "66d53f51d1384d8d91030241c2c243bd-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetCountryList'",
+              "source": "7363466246b64711990949866a141e2a-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215027055,
+          "stop": 1596215027358
+        },
+        {
+          "name": "2 - Check each country has CountryStatus and CountryId in response",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215027358,
+          "stop": 1596215027359
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "4c090c699e634405b1625aad5e3ca113-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215027055,
+      "stop": 1596215027817
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215027055,
+  "stop": 1596215027817
+}

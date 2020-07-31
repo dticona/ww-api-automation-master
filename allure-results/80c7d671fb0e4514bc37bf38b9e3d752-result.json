@@ -1,0 +1,122 @@
+{
+  "uuid": "d00a86c2-bb5d-4dbe-a48f-f5555e7bcb05-tr-0-1111",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountWithInvalidCountryCode",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountWithInvalidCountryCode",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountWithInvalidCountryCode"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-3939"
+    },
+    {
+      "name": "tag",
+      "value": "C5450912"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountWithInvalidCountryCode",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if process an ValidateBitPesaAccount() method with invalid Country Code, an error message is displayed.\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountWithInvalidCountryCode",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ValidateBitPesaAccount()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "baa4bbcadccb4a25afa9e8456536bcd9-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "19ff840773144318a6c4b17df42b12e8-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215154055,
+          "stop": 1596215154354
+        },
+        {
+          "name": "2 - Check response for method `ValidateBitPesaAccount()` have error message 'Country Code must be two character only'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215154354,
+          "stop": 1596215154354
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5397d789a1124e0a91c0237f950bc548-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215154045,
+      "stop": 1596215154831
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215154045,
+  "stop": 1596215154831
+}

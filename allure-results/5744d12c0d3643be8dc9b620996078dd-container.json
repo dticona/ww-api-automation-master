@@ -1,0 +1,61 @@
+{
+  "uuid": "d946d4ea-4fee-49bc-b108-36d351eb7a36-tc-0-1129",
+  "name": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationZENITHINTERNATIONALBANKPLC",
+  "children": [
+    "499daff5-ee6b-43ad-ab47-43041530b74b-tr-0-1132"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215203215,
+      "stop": 1596215203215
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215203215,
+      "stop": 1596215203215
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215203215,
+      "stop": 1596215203215
+    }
+  ],
+  "links": [],
+  "start": 1596215200374,
+  "stop": 1596215203217
+}

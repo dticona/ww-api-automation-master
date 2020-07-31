@@ -1,0 +1,142 @@
+{
+  "uuid": "fbc58b6d-0b99-4f1f-9815-76e30a90b98f-tr-0-1092",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckResultCodeWhenTheTransactionIsNotOnHold",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckResultCodeWhenTheTransactionIsNotOnHold",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResultCodeWhenTheTransactionIsNotOnHold"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-3925"
+    },
+    {
+      "name": "tag",
+      "value": "C17270228"
+    }
+  ],
+  "links": [],
+  "name": "CheckResultCodeWhenTheTransactionIsNotOnHold",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify Result Code = 3 when Transaction not on compliance /Processing Hold\n",
+  "steps": [
+    {
+      "name": "CheckResultCodeWhenTheTransactionIsNotOnHold",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `UpdateHoldStatus()` request using the UnPaidTransction",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "661a47a468574c83bfdd898cbac1b905-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "a4e0071d6aa54835908f3dec7767bb47-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215114349,
+          "stop": 1596215114836
+        },
+        {
+          "name": "2 - Check that the response has the ResultCode=3",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215114836,
+          "stop": 1596215114837
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "692f0efc9baf4bf0a4886d78b95d6f83-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "87dc3f896f324581b9fb9e5ce700f5d7-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+          "source": "8ec8b182c9034b539cf0491d351ff0b1-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+          "source": "76c105f040244d46adda691f631b71c9-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "670c70d11e364b3d951798724cc482e7-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215113389,
+      "stop": 1596215115400
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215113389,
+  "stop": 1596215115400
+}

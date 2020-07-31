@@ -1,0 +1,32 @@
+﻿{
+  "AgentCommission": "1",
+  "ComplianceAgentID": "PRODTEST717",
+  "CustomerFee": "3",
+  "DeliveryMethod": "OFFICE PICKUP",
+  "IDTRequestId": "0",
+  "HoldOrderFlag": "-1", // this field must be override
+  "MTS_Receiver_UID": "134282",
+  "MTS_Sender_UID": "137583 ",
+  "OrderStatus": "121212",
+  "OriginatingClientIP": "127.0.0.0",
+  "OriginatingStateID": "4350",
+  "POCID": "85471",
+  "PayerId": "132",
+  "PaymentMethod": "CASH",
+  "Perform_Cpas_Check": "false",
+  "Perform_List_Check": "false",
+  "PurchaseFXRate": "6.5",
+  "PurposeofTransaction": "Testing",
+  "ReceivingCountry": "COL",
+  "RecipientAmount": "53.89",
+  "RecipientCurrencyISOCode": "COP",
+  "RecipientRelationshiptoSender": "Friend",
+  "RetailFXRate": "5.39",
+  "SendAmount": "10",
+  "SendAmountCurrencyISOCode": "USD",
+  "SenderCountry": "USA",
+  "SourceofFunds": "Test",
+  "SubpayerId": "127",
+  "UserID": "jaitkenag"
+
+}

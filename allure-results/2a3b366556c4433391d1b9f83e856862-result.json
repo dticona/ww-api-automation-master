@@ -1,0 +1,132 @@
+{
+  "uuid": "98a57c7f-8489-4983-86b6-e6b7285e7f5e-tr-0-1099",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithZeroHoldOrderFlag",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithZeroHoldOrderFlag",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageProcessTransactionWithZeroHoldOrderFlag"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-3927"
+    },
+    {
+      "name": "tag",
+      "value": "C17369170"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageProcessTransactionWithZeroHoldOrderFlag",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if process a transaction with HoldOrderFlag:0 a error message is displayed\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageProcessTransactionWithZeroHoldOrderFlag",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "893952c0013a41c28bacb25e00d1d5dc-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "0d95230a3a294f83852f13212c562b9b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215078765,
+          "stop": 1596215079067
+        },
+        {
+          "name": "2 - Check that response has 'Hold order flag is required' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215079068,
+          "stop": 1596215079068
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "966ca79c00ab4b9abd3ccd9423935d7b-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "02d599f9e36a42099e6d73b6bd0bca12-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "b0176bd8ca9c467f8877e263e590f7d9-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215078455,
+      "stop": 1596215079525
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215078455,
+  "stop": 1596215079525
+}

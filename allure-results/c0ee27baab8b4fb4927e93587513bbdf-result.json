@@ -1,0 +1,137 @@
+{
+  "uuid": "6df8eca7-5931-45f3-bd80-bd27d67d1489-tr-0-1104",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCreateNewCpasId.CheckItIsPossibleCreateNewCpasId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCreateNewCpasId.CheckItIsPossibleCreateNewCpasId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateNewCpasId"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckItIsPossibleCreateNewCpasId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateNewCpasId"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4554"
+    },
+    {
+      "name": "tag",
+      "value": "C24681131"
+    }
+  ],
+  "links": [],
+  "name": "CheckItIsPossibleCreateNewCpasId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that it's possible create a new CpasId by 'CreateNewCpasId()' method\n",
+  "steps": [
+    {
+      "name": "CheckItIsPossibleCreateNewCpasId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `CreateNewCpasId()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "6a196dc45526424abc0b724cc6ce6c7b-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "d0b85591a3bb4235823bc7d54fd4b0eb-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215022315,
+          "stop": 1596215022645
+        },
+        {
+          "name": "2 - Check response shows New CpasId",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215022645,
+          "stop": 1596215022646
+        },
+        {
+          "name": "3 - Check response shows result code = 0",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215022646,
+          "stop": 1596215022652
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e8bd88359ef545c9868f3eb977e428a1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215022315,
+      "stop": 1596215023106
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215022315,
+  "stop": 1596215023106
+}

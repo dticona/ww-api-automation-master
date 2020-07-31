@@ -1,0 +1,122 @@
+{
+  "uuid": "474850ee-e919-4d6f-a835-21b108d4a3b6-tr-0-1113",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountWithInvalidBankCode",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountWithInvalidBankCode",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountWithInvalidBankCode"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-3951"
+    },
+    {
+      "name": "tag",
+      "value": "C18083684"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountWithInvalidBankCode",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed when an invalid Bank Code is used \n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountWithInvalidBankCode",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Make a request to `ValidateBitPesaAccount()` providing a invalid bank code",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "26924ab3e86f433fb1b7adee7c75ea1a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "4218431eef474432ba4c09938108f9e9-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215153283,
+          "stop": 1596215153586
+        },
+        {
+          "name": "2 - Check response for method `ValidateBitPesaAccount()` have error message 'Invalid Bank Code'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215153586,
+          "stop": 1596215153587
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ef50f34c177b4d78930527fd81829128-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215153274,
+      "stop": 1596215154043
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215153274,
+  "stop": 1596215154043
+}

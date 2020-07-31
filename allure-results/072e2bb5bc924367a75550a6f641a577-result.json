@@ -1,0 +1,122 @@
+{
+  "uuid": "742c31cb-055e-424e-92f7-9574156f5f0f-tr-0-1062",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetSubPayerListByPayer.CheckSubPayerStatusIsReturnedAsDisabled",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetSubPayerListByPayer.CheckSubPayerStatusIsReturnedAsDisabled",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetSubPayerListByPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSubPayerStatusIsReturnedAsDisabled"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetSubPayerListByPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-3942"
+    },
+    {
+      "name": "tag",
+      "value": "C9844583"
+    }
+  ],
+  "links": [],
+  "name": "CheckSubPayerStatusIsReturnedAsDisabled",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that subpayer status is returned as 'Disabled' in the API method 'GetSubPayerListByPayer' response when all POP's of the subpayer are disabled\n",
+  "steps": [
+    {
+      "name": "CheckSubPayerStatusIsReturnedAsDisabled",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetSubPayerListByPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetSubPayerListByPayer'",
+              "source": "321c2f5f7c5d47fcabe4758c41404cff-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetSubPayerListByPayer'",
+              "source": "dda828da191e45f99ba6a78fa9dcfee0-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215074067,
+          "stop": 1596215074424
+        },
+        {
+          "name": "2 - Check The subPayer status is disabled in response",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215074424,
+          "stop": 1596215074424
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "479a2e6d84044d3d94bbfbc5995d13fc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215074067,
+      "stop": 1596215074879
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215074067,
+  "stop": 1596215074879
+}

@@ -1,0 +1,17 @@
+﻿{
+	"AgentID": "PRODTEST717",
+	"DOB": "12-04-1994",
+	"Nationality": "MEX",
+	"Phone1": "5789878548",
+	"RecipientAddress1": "TETS 7879",
+	"RecipientCityID": "4565", 
+	"RecipientCityName": "Testing City",
+	"RecipientCountry": "MEX",
+	"RecipientFirstName": "-1",// this field must be override
+	"RecipientGender": "M",
+	"RecipientLastName": "-1",// this field must be override
+	"RecipientOccupation": "Tester",
+	"RecipientStateID": "456",
+	"RecipientStateName": "Estado de Mexico",
+	"UserID": "jaitkenag"
+}

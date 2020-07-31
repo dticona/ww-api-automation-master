@@ -1,0 +1,122 @@
+{
+  "uuid": "90274187-2056-46cb-9b98-3b631c1cf0b6-tr-0-1131",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationUnitedBankForAfricaPlc",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationUnitedBankForAfricaPlc",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationUnitedBankForAfricaPlc"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4497"
+    },
+    {
+      "name": "tag",
+      "value": "C65581115"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationUnitedBankForAfricaPlc",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for United Bank For Africa Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationUnitedBankForAfricaPlc",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for United Bank For Africa Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "834d055c29e9417c883964fbaba0999e-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "67f21c689f2f4fe3afb4417d865b3342-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215194122,
+          "stop": 1596215196265
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  GBADAMASI RASIDAT AYONI",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215196265,
+          "stop": 1596215196266
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "bb67fad663c2425aaa0af09ff94afd1e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215194112,
+      "stop": 1596215196727
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215194112,
+  "stop": 1596215196727
+}

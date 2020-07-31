@@ -1,0 +1,143 @@
+{
+  "uuid": "87980d28-ed37-4bdd-a8c7-e52e930039e1-tr-0-1025",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForOperationalHoldTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForOperationalHoldTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailForOperationalHoldTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4865"
+    },
+    {
+      "name": "tag",
+      "value": "C86964405"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailForOperationalHoldTransaction",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify GetOrderDetail() returns the status of an Operational Hold transaction\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailForOperationalHoldTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an Operational Hold transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "f03087c94b5f47f2b079c16e40012bd1-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "ff8fb0a2317b461a898771c14f2642a3-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "74d7072f52474ca3b0e39f851a64328c-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "76172bdd5fb14a7b93df3be0c3691fa7-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596222772200,
+          "stop": 1596222773183
+        },
+        {
+          "name": "2 - Verify if the GetOrderStatus() method return 'Operational Hold' on OrderStatus field",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "039310b7df884c298d84600bae680f7f-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "5e28e1dc5b084f329bd99908a478a84b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596222773183,
+          "stop": 1596222773480
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "19fc44aae99d4e109e58fe08e82cffaa-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596222772199,
+      "stop": 1596222773937
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596222772199,
+  "stop": 1596222773937
+}

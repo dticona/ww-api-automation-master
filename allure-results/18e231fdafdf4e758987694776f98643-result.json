@@ -1,0 +1,122 @@
+{
+  "uuid": "a1a01eea-ef77-4b36-8966-fa1268b69ba4-tr-0-1001",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckGetFeeFxDataWithPayerShowsFeePayer",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckGetFeeFxDataWithPayerShowsFeePayer",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetFeeFxDataWithPayerShowsFeePayer"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4561"
+    },
+    {
+      "name": "tag",
+      "value": "C28586150"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetFeeFxDataWithPayerShowsFeePayer",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if GetFeeFXDataWithPayer() response shows fee of an Payer\n",
+  "steps": [
+    {
+      "name": "CheckGetFeeFxDataWithPayerShowsFeePayer",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeeFXDataWithPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "82bfbbbe1d2f4c75b23a5e194a436a0e-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "326a2e8a8e704101b10b07cc5efe61b5-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215028618,
+          "stop": 1596215028949
+        },
+        {
+          "name": "2 - Check The response should display correct fields",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215028949,
+          "stop": 1596215028950
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "21349c3e5f4a4b989724e66487bcb8d2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215028603,
+      "stop": 1596215029407
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215028603,
+  "stop": 1596215029407
+}

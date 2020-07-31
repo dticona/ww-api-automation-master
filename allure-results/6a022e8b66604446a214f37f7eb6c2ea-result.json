@@ -1,0 +1,199 @@
+{
+  "uuid": "7d29073c-076b-4588-b30d-8b49bf6888dc-tr-0-1028",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForCancelTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForCancelTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailForCancelTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4865"
+    },
+    {
+      "name": "tag",
+      "value": "C86969635"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailForCancelTransaction",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the GetOrderDetail() returns 'Cancelled' status.\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailForCancelTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an Operational Hold transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "e855c54296a54bac881e89bf0347c664-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "282f3b1a044d4995aeb0ace5bb5f7dc9-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "2f047962f01e45a08c3da5e09df230fe-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "976b670035ae4e0a8b6879caff079ef3-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596222762939,
+          "stop": 1596222764968
+        },
+        {
+          "name": "2 - Release the transation using the ReleaseOrder method",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "c8ca30f51ab54b009fdd2d1cd1ea9aed-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "5501fe73970e4e2487a0bf6d9647feab-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596222764968,
+          "stop": 1596222765327
+        },
+        {
+          "name": "3 - Mark the transaction as trasmitted",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596222765327,
+          "stop": 1596222766489
+        },
+        {
+          "name": "4 - Cancel the transaction",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596222766489,
+          "stop": 1596222766673
+        },
+        {
+          "name": "5 - Verify if the GetOrderDetail() method return 'Operational Hold' on OrderStatus field",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "4a30159d628b43d0a49690ab7014358d-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "4f64806bbbb6495783c9ead254475757-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596222766673,
+          "stop": 1596222767023
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f2e90a2204ca49efb5492ff17d15354d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596222762936,
+      "stop": 1596222768168
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596222762934,
+  "stop": 1596222768173
+}

@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" />
+  <Import Project="..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{573ECB9B-1D7A-461B-B788-9874564BEC81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WhiteWingsApi</RootNamespace>
+    <AssemblyName>WhiteWingsApi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>SA1101;CS0649;CS0169;SA1652</NoWarn>
+    <WarningsAsErrors>SA1306 SA1501 SA1013 SA1508 SA1200 SA1025 SA1514 SA1210 SA1208</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Allure.Commons, Version=2.3.64.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Allure.Commons.2.3.64.1\lib\net45\Allure.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MimeTypesMap, Version=1.0.3.0, Culture=neutral, PublicKeyToken=1b320cc08ad5aa89, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeTypesMap.1.0.3\lib\net45\MimeTypesMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NUnit.Allure, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.Allure.1.0.5\lib\net45\NUnit.Allure.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="StyleCop, Version=6.1.0.0, Culture=neutral, PublicKeyToken=f904653c63bc2738, processorArchitecture=MSIL">
+      <HintPath>..\packages\StyleCop.6.1.0\lib\net40\StyleCop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\GetReceipientPromotionRules\ReceipientPromotionRulesRequest.cs" />
+    <Compile Include="TestData\Constants\BankAccountsConstants.cs" />
+    <Compile Include="TestData\Constants\CountriesIsoCodesTwo.cs" />
+    <Compile Include="TestData\Constants\RecipientCurrencyConstants.cs" />
+    <Compile Include="TestData\Constants\DeliveryMethodConstants.cs" />
+    <Compile Include="TestData\Constants\DeliveryOptionConstants.cs" />
+    <Compile Include="TestData\Constants\BankNamesConstants.cs" />
+    <Compile Include="TestData\Constants\CountryIdConstants.cs" />
+    <Compile Include="TestData\Constants\ComplianceAgentIDConstants.cs" />
+    <Compile Include="TestData\Constants\NigeriaBankCodes.cs" />
+    <Compile Include="TestData\Constants\PocIdConstants.cs" />
+    <Compile Include="TestData\Constants\UserIdConstants.cs" />
+    <Compile Include="TestData\Constants\AgentIdConstants.cs" />
+    <Compile Include="TestData\Constants\MsisdnConstants.cs" />
+    <Compile Include="TestData\Constants\PayerIdConstants.cs" />
+    <Compile Include="TestData\Constants\SubPayerIdConstants.cs" />
+    <Compile Include="TestData\Constants\HoldStatusConstants.cs" />
+    <Compile Include="TestData\Constants\CPasIdConstants.cs" />
+    <Compile Include="TestData\Results\GetPointOfContactListBySubPayerResults.cs" />
+    <Compile Include="TestData\Results\ValidateTransferToAccountResults.cs" />
+    <Compile Include="TestData\Results\UpdateHoldStatusResults.cs" />
+    <Compile Include="Tests\CheckMethodGetFeeFXDataWithPayer.cs" />
+    <Compile Include="Tests\CheckMethodGetFeesFXDataWithoutPayer.cs" />
+    <Compile Include="Tests\CheckMethodGetOrderDetail.cs" />
+    <Compile Include="Tests\CheckMethodGetOrderStatus.cs" />
+    <Compile Include="Tests\CheckMethodGetPayerRoundingRules.cs" />
+    <Compile Include="Tests\CheckMethodGetPayerCommission.cs" />
+    <Compile Include="Tests\CheckMethodCreateSender.cs" />
+    <Compile Include="Tests\CheckMethodCreateRecipient.cs" />
+    <Compile Include="Tests\CheckMethodGetReceipientPromotionRules.cs" />
+    <Compile Include="Enums\HoldOrderFlagEnum.cs" />
+    <Compile Include="Exceptions\DuplicateFileException.cs" />
+    <Compile Include="Exceptions\TestRailApiException.cs" />
+    <Compile Include="Tests\CheckMethodGetPayersByBank.cs" />
+    <Compile Include="Tests\CheckMethodGetPayerListByCountry.cs" />
+    <Compile Include="Tests\CheckMethodGetSubPayerListByPayer.cs" />
+    <Compile Include="Tests\CheckMethodGetStateListByCountry.cs" />
+    <Compile Include="Tests\CheckMethodCancelOrderRequest.cs" />
+    <Compile Include="Tests\CheckMethodGetPointOfContactListBySubPayer.cs" />
+    <Compile Include="Tests\CheckMethodReleaseOrder.cs" />
+    <Compile Include="Tests\CheckMethodSetTransactionNotes.cs" />
+    <Compile Include="Tests\CheckMethodUpdateHoldStatus.cs" />
+    <Compile Include="Tests\CheckMethodProcessTransaction.cs" />
+    <Compile Include="Tests\CheckMethodCreateNewCpasId.cs" />
+    <Compile Include="Tests\CheckMethodValidateTransferToAccount.cs" />
+    <Compile Include="Tests\CheckMethodValidateBitPesaAccount.cs" />
+    <Compile Include="Tests\CheckMethodVtnBankAccountValidation.cs" />
+    <Compile Include="Utils\AllureHelper.cs" />
+    <Compile Include="Utils\Api\StreamWrapper.cs" />
+    <Compile Include="Utils\Api\WhiteWingsClient.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\CheckMethodGetCountryList.cs" />
+    <Compile Include="Utils\Asserts\EntityAssert.cs" />
+    <Compile Include="Utils\Asserts\SoftAssert.cs" />
+    <Compile Include="Utils\Configs.cs" />
+    <Compile Include="Utils\DataBase\DataBaseConnection.cs" />
+    <Compile Include="Utils\StringHelper.cs" />
+    <Compile Include="Utils\EntityHelper.cs" />
+    <Compile Include="Utils\JsonUtils.cs" />
+    <Compile Include="Utils\TestRail\TestRailApiClient.cs" />
+    <Compile Include="Utils\TestRail\TestRailCaseIdAttribute.cs" />
+    <Compile Include="Utils\TestRail\TestRailManager.cs" />
+    <Compile Include="Web References\WWAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestData\ValidateBitPesaAccount\ParamValidateBitPesaAccount.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\ProcessTransaction\ParamProcessTransaction.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\GetReceipientPromotionRules\PromotionRuleExpectedResponse.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\GetReceipientPromotionRules\ReceipientPromotionRulesRequest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\CreateSender\ParamCreateSender.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\CreateRecipient\ParamCreateRecipient.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\GetFeeFXDataWithPayer\ParamFeeFxDataWithPayer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\GetFeesFXDataWithoutPayer\ParamFeeFXDataWithoutPayer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestData\VtnBankAccountValidaton\ParamVtnBankAccountValidation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Web References\WWAPI\BankBranchCodeByPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\BankByCountryList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\BankByPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\CancellationReasonsList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\CityByStateList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\CountryList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\FeeFXDataWithoutPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\FeeFxDataWithPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\FxGivenPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\GetTransactionNotesList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\NotesByAgentList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputBancoAccountValidation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamCancelOrderRequest.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamContinueOrder.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamCreateCPASId.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamCreateRecipient.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamCreateSender.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamMigrateAgent.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamOrderDetail.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamOrderStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamProcessTransaction.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamReleaseOrder.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamSaveCustomerIdentification.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamTransactionNote.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamUpdateRecipient.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputParamUpdateSender.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputUpdateHoldStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputValidateBitPesaAccount.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputValidateMFSAccount.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputValidateMFSBankAccount.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputValidateTransferToAccount.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\OutputVTNBankAccountValidation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\ParamRecipient.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\ParamSender.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PayerCommissionList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PayerRoundingRulesList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PayersByBankList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PayersByCountryList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PointofContactBySubPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\PromotionRuleList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\StateByCountryList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\SubPayerByCountryList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\SubPayerByPayerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WWAPI\WWCDTC.disco" />
+    <None Include="allureConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+    <None Include="categories.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WWAPI\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WWAPI\WWCDTC.wsdl" />
+    <None Include="Web References\WWAPI\WWCDTC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WWAPI\WWCDTC0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WWAPI\WWCDTC1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WWAPI\WWCDTC2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://qa.bossrevmts.com:8088/WWCDTC.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WWAPI\</RelPath>
+      <UpdateFromURL>https://qa.bossrevmts.com:8088/WWCDTC.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>WhiteWingsApi_com_bossrevmts_qa_WWCDTC</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.13.0\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\NUnit.3.11.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.11.0\build\NUnit.props'))" />
+  </Target>
+</Project>

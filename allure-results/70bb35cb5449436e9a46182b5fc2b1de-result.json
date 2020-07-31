@@ -1,0 +1,122 @@
+{
+  "uuid": "948aed62-d460-497f-8ac7-3a4e096d325c-tr-0-1080",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckErrorMessageInUpdateHoldStatusResponseWithNewStatusBooleanValue",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckErrorMessageInUpdateHoldStatusResponseWithNewStatusBooleanValue",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageInUpdateHoldStatusResponseWithNewStatusBooleanValue"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4614"
+    },
+    {
+      "name": "tag",
+      "value": "C23305021"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageInUpdateHoldStatusResponseWithNewStatusBooleanValue",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that an error message is displayed in the API method 'UpdateHoldStatus()' response when the NewStatus field is a number boolean.\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageInUpdateHoldStatusResponseWithNewStatusBooleanValue",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `UpdateHoldStatus()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "5b16f3469a0f4d1ab773e5dcde48eca3-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "16139513788445d6bea9e869e2e0447e-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215101179,
+          "stop": 1596215101614
+        },
+        {
+          "name": "2 - Check that response has 'Invalid New Status' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215101614,
+          "stop": 1596215101615
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "226ab6f8d2314f0ba22d016d019bd466-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215101179,
+      "stop": 1596215102071
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215101179,
+  "stop": 1596215102071
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "bb0471d6-4e65-473e-aa1c-788c3debee69-tr-0-1046",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCreateSender.CheckIfIsPossibleToCreateSender",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCreateSender.CheckIfIsPossibleToCreateSender",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateSender"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckIfIsPossibleToCreateSender"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateSender"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4516"
+    },
+    {
+      "name": "tag",
+      "value": "C17163460"
+    }
+  ],
+  "links": [],
+  "name": "CheckIfIsPossibleToCreateSender",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that is possible to create a sender\n",
+  "steps": [
+    {
+      "name": "CheckIfIsPossibleToCreateSender",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to CreateSender() with the following values",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateSender'",
+              "source": "72380117f4864d10b8af1248e18485fe-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateSender'",
+              "source": "1e7e66d6e3904becacabf7b36801119c-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215024720,
+          "stop": 1596215025051
+        },
+        {
+          "name": "2. Verify if the response returned the Sender Id and has not errors",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215025051,
+          "stop": 1596215025056
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ff251bae1268491ebd057adb02303695-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215024706,
+      "stop": 1596215025522
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215024706,
+  "stop": 1596215025522
+}

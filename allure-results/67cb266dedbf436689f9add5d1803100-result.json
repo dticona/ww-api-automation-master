@@ -1,0 +1,122 @@
+{
+  "uuid": "6f89a05d-0dc7-4844-836d-550a48a971e8-tr-0-1006",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFxDataWhenAngetIdIsInvalid",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFxDataWhenAngetIdIsInvalid",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeeFxDataWhenAngetIdIsInvalid"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4563"
+    },
+    {
+      "name": "tag",
+      "value": "C28691047"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeeFxDataWhenAngetIdIsInvalid",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetFeeFXDataWithPayer when a Invalid Agent ID is provided on the request\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeeFxDataWhenAngetIdIsInvalid",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeeFXDataWithPayer()` request providing an invalid Agent ID",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "18434598820a489986a2c63982f67c29-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "ce5c46421e464d009b1a343e587ed4aa-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215029417,
+          "stop": 1596215029717
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Agent id.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215029717,
+          "stop": 1596215029717
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "2f267de826d84fef86f6d805cd9d590e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215029409,
+      "stop": 1596215030170
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215029409,
+  "stop": 1596215030171
+}

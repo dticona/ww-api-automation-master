@@ -1,0 +1,184 @@
+{
+  "uuid": "fc2b9c80-9c09-412b-b047-b553d14af45f-tr-0-1027",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForPaidTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForPaidTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailForPaidTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4865"
+    },
+    {
+      "name": "tag",
+      "value": "C86964402"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailForPaidTransaction",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the GetOrderDetail() returns 'Paid' status.\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailForPaidTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an Operational Hold transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "4e415d072bb248d98a130c380c3e44ba-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "89b7acf812414328b4c872f6f6e9bdbd-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "8b06b90779274b4f93547bd31fef0e8b-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "2bd937819ee54b8ea58caa4dd6a65271-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596218372376,
+          "stop": 1596218374527
+        },
+        {
+          "name": "2 - Release the transation using the ReleaseOrder method",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "46fe7ce53b7b4cf3a54c7184ecd56ac5-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "eb63b1dcf7894637a705e1283fbc26e8-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596218374527,
+          "stop": 1596218374885
+        },
+        {
+          "name": "3 - Mark the transaction as Paid",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596218374885,
+          "stop": 1596218376155
+        },
+        {
+          "name": "4 - Verify if the GetOrderDetail() method return 'Operational Hold' on OrderStatus field",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "63872448a6a24f67a7935764dc87630e-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "bb4c86c9abc14677a1971440b75edba7-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596218376155,
+          "stop": 1596218376505
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "bb024ee420ce4b1e95e22a6822d48407-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596218372370,
+      "stop": 1596218377643
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596218372368,
+  "stop": 1596218377648
+}

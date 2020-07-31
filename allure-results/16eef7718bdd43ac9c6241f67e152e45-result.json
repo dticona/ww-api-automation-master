@@ -1,0 +1,122 @@
+{
+  "uuid": "50f6513d-d7f8-445a-a7a9-37ba9457546f-tr-0-1043",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission.CheckErrorWhenGetPayerCommissionResponseUsingPayerIdWithoutPayers",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission.CheckErrorWhenGetPayerCommissionResponseUsingPayerIdWithoutPayers",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayerCommissionResponseUsingPayerIdWithoutPayers"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4589"
+    },
+    {
+      "name": "tag",
+      "value": "C28993111"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayerCommissionResponseUsingPayerIdWithoutPayers",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if a message is displayed in GetPayerCommission() when PayerId don't have any payer in the selected country\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayerCommissionResponseUsingPayerIdWithoutPayers",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerCommission()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerCommission'",
+              "source": "cebf8af039964a568ebfcc19ccf10bcf-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerCommission'",
+              "source": "dc7b069a8a8b45fba9f1100d103ad2e3-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215057841,
+          "stop": 1596215058220
+        },
+        {
+          "name": "2 - The response should display following error message: No Payee fee commision found against COL.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215058220,
+          "stop": 1596215058221
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "06d7e2501b2c417b8324f1cace4db4dc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215057840,
+      "stop": 1596215058681
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215057840,
+  "stop": 1596215058681
+}

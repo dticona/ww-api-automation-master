@@ -1,0 +1,11 @@
+﻿{
+	"AgentId": "WWMT07",
+	"DeliveryMethod": "OFFICE PICKUP",
+	"PayerId": "133",
+	"PaymentMethod": "CASH",
+	"RecipientCountry": "BOL",
+	"RecipientCurrency": "USD",
+	"SendAmount": "200",
+	"SendAmountCurrencyISOCode": "USD",
+	"SubPayerId": "150"
+}

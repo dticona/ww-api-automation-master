@@ -1,0 +1,122 @@
+{
+  "uuid": "12f9ae0f-726a-4de3-a3b5-af76277ac3f5-tr-0-1014",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenDeliveryOptionFieldIsInvalid",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenDeliveryOptionFieldIsInvalid",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenDeliveryOptionFieldIsInvalid"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4575"
+    },
+    {
+      "name": "tag",
+      "value": "C28693294"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenDeliveryOptionFieldIsInvalid",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed on GetFeesFXDataWithoutPayer response when DeliveryOption field is invalid\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenDeliveryOptionFieldIsInvalid",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeesFXDataWithoutPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "dad881abb069436f885a54974eeb0b9a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "5a9517a693d04e38a1d679cb5a351809-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215038341,
+          "stop": 1596215038728
+        },
+        {
+          "name": "2 - Check that response has 'Invalid delivery option.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215038728,
+          "stop": 1596215038729
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3bafd36f7ad14bdab73b9c3f43894997-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215038332,
+      "stop": 1596215039217
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215038332,
+  "stop": 1596215039217
+}

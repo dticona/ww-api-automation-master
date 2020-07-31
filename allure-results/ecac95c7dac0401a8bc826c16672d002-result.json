@@ -1,0 +1,122 @@
+{
+  "uuid": "b22560a1-fca9-4efa-ad8c-7231572aaf74-tr-0-1144",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationWithInvalidBankCode",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationWithInvalidBankCode",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationWithInvalidBankCode"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4506"
+    },
+    {
+      "name": "tag",
+      "value": "C66146742"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationWithInvalidBankCode",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed when an invalid Bank Code is used in VTNBankAccountValidation()\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationWithInvalidBankCode",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Make a request to `VtnAccountValidation()` providing a invalid bank code",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "09c7416ab1e24d8ab2654dc5086f4059-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "ae1ae3e136f54763a068d5d1471c6793-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215199604,
+          "stop": 1596215199906
+        },
+        {
+          "name": "2 - Check response for method `VtnAccountValidation()` have error message 'Invalid Bank Code'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215199906,
+          "stop": 1596215199906
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7348f91e57334048bd79f60446eb3f14-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215199594,
+      "stop": 1596215200371
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215199594,
+  "stop": 1596215200372
+}

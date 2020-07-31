@@ -1,0 +1,122 @@
+{
+  "uuid": "44b783cd-73e1-4c58-bf31-90a25142adb9-tr-0-1107",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount.CheckValidateTransferToAccountResponseResultWhenFieldsAreEmpty",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount.CheckValidateTransferToAccountResponseResultWhenFieldsAreEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateTransferToAccountResponseResultWhenFieldsAreEmpty"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-4628"
+    },
+    {
+      "name": "tag",
+      "value": "C24253302"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateTransferToAccountResponseResultWhenFieldsAreEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that a Result Code 4 = Blank Input is displayed in API method 'ValidateTransferToAccount()' response when the fields: Phone number / SubPayerID are empty\n",
+  "steps": [
+    {
+      "name": "CheckValidateTransferToAccountResponseResultWhenFieldsAreEmpty",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ValidateTransferToAccount()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateTransferToAccount'",
+              "source": "3abd87677dde48968a13f75f0b8cff40-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateTransferToAccount'",
+              "source": "8008e9dc9b044c54897227aa28151e7a-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215157793,
+          "stop": 1596215158093
+        },
+        {
+          "name": "2 - Check response for method `ValidateTransferToAccount()` have correct error messages and result code'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215158093,
+          "stop": 1596215158094
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5b8a1d952b23484691b6cf8d880db50e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215157792,
+      "stop": 1596215158556
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215157792,
+  "stop": 1596215158556
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "5eb07e0d-8d92-4876-be97-36911d9b7121-tr-0-1128",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountKeyStone",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountKeyStone",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountKeyStone"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4446"
+    },
+    {
+      "name": "tag",
+      "value": "C64889594"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountKeyStone",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for KEYSTONE BANK PLC\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountKeyStone",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Keystone Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "01b62bbab6ca48e3ba08da62fe749644-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "6fa9940c9daa49708ddf78645edef56c-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215135353,
+          "stop": 1596215137041
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner EVANS OGECHI AUGUSTA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215137041,
+          "stop": 1596215137041
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "87b8529c608f46eb8eb633cf6ad63b34-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215135346,
+      "stop": 1596215137505
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215135346,
+  "stop": 1596215137506
+}

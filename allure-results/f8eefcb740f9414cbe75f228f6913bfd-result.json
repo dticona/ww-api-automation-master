@@ -1,0 +1,132 @@
+{
+  "uuid": "6dc1c531-8528-47fc-83aa-4054f9f61e27-tr-0-1068",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckCancelOrderRequestHasInvalidAgentId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckCancelOrderRequestHasInvalidAgentId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCancelOrderRequestHasInvalidAgentId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4552"
+    },
+    {
+      "name": "tag",
+      "value": "C28699780"
+    }
+  ],
+  "links": [],
+  "name": "CheckCancelOrderRequestHasInvalidAgentId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in CancelOrderRequest method when AgentID field is Invalid\n",
+  "steps": [
+    {
+      "name": "CheckCancelOrderRequestHasInvalidAgentId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `CancelOrderRequest()` on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "416d0d81cce64620beaca639943eada2-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "01f74afaa1b042a99fb7f955797e9140-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "469c548312b8448e9d4ef52d939534ae-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "7e5fe2b982374650882b362ef3e6f75c-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215015679,
+          "stop": 1596215017538
+        },
+        {
+          "name": "2 - Check 'Invalid AgentID' Error message is returned",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215017539,
+          "stop": 1596215017539
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "489273080264420caf5d91ee76082efe-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215015675,
+      "stop": 1596215018687
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215015673,
+  "stop": 1596215018693
+}

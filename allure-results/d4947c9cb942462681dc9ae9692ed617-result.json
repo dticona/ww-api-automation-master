@@ -1,0 +1,122 @@
+{
+  "uuid": "b5d8c573-a75a-43f2-8c96-5136f595c536-tr-0-1143",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationFirstBankOfNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationFirstBankOfNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationFirstBankOfNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4505"
+    },
+    {
+      "name": "tag",
+      "value": "C66008326"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationFirstBankOfNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for First Bank Of Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationFirstBankOfNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for First Bank Of Nigeria",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "c0d805223ad14f0f9742bc36ab3f68b7-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "69a277be7eeb4583b02e062686c47c3a-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215172124,
+          "stop": 1596215174513
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  AGUONIGHO RHODA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215174513,
+          "stop": 1596215174514
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "890bf189d05f46faaaa6492db44516a2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215172115,
+      "stop": 1596215174982
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215172115,
+  "stop": 1596215174982
+}

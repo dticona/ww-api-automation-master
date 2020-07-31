@@ -1,0 +1,122 @@
+{
+  "uuid": "e02087f9-4d54-4015-9c50-065fcf4b8cc7-tr-0-1070",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPointOfContactListBySubPayer.CheckErrorMessageInGetPointOfContactListBySubPayerResponse",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPointOfContactListBySubPayer.CheckErrorMessageInGetPointOfContactListBySubPayerResponse",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPointOfContactListBySubPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageInGetPointOfContactListBySubPayerResponse"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPointOfContactListBySubPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4601"
+    },
+    {
+      "name": "tag",
+      "value": "C29360811"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageInGetPointOfContactListBySubPayerResponse",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed on GetPointOfContactListBySubPayer\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageInGetPointOfContactListBySubPayerResponse",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPointOfContactListBySubPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPointofContactListBySubpayer'",
+              "source": "c7c2bf262ed243888fb9835078dbd2c9-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPointofContactListBySubpayer'",
+              "source": "be12569af37f4dba8242e2b564a09d7b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215071687,
+          "stop": 1596215071996
+        },
+        {
+          "name": "2 - Check that response has Result Code=3 and 'Invalid SubPayer Id.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215071996,
+          "stop": 1596215072000
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8083e198cd774777988ba49f3602c1f7-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215071686,
+      "stop": 1596215072463
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215071686,
+  "stop": 1596215072463
+}

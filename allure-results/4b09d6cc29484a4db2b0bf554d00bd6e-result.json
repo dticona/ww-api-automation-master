@@ -1,0 +1,149 @@
+{
+  "uuid": "2d1a95b2-036e-4821-82f2-5958c52e778a-tr-0-1026",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForComplianceHoldTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForComplianceHoldTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailForComplianceHoldTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4865"
+    },
+    {
+      "name": "tag",
+      "value": "C86964406"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailForComplianceHoldTransaction",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 15 but was 14. Strings differ at index 0.\r\n  Expected: \"Compliance Hold\"\r\n  But was:  \"Operation Hold\"\r\n  -----------^\r\n",
+    "trace": "   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.<>c__DisplayClass8_0.<CheckGetOrderDetailForComplianceHoldTransaction>b__1() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 204\r\n   at WhiteWingsApi.BaseTest.<>c__DisplayClass6_0.<LogStep>b__0() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at WhiteWingsApi.BaseTest.LogStep(String stepName, Action action) in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForComplianceHoldTransaction() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 201\r\n"
+  },
+  "stage": "finished",
+  "description": "Verify GetOrderDetail() returns the status of an Compliance Hold transaction\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailForComplianceHoldTransaction",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 15 but was 14. Strings differ at index 0.\r\n  Expected: \"Compliance Hold\"\r\n  But was:  \"Operation Hold\"\r\n  -----------^\r\n",
+        "trace": "   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.<>c__DisplayClass8_0.<CheckGetOrderDetailForComplianceHoldTransaction>b__1() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 204\r\n   at WhiteWingsApi.BaseTest.<>c__DisplayClass6_0.<LogStep>b__0() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at WhiteWingsApi.BaseTest.LogStep(String stepName, Action action) in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForComplianceHoldTransaction() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 201\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process a Compliance Hold transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "0cb3a81657e341f4b1174dd268b4e9ae-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "bf939b731ead498d8708fe3a248f825d-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "5039439e17564ab9aaa0a6e162aa1b86-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "304145a92c36482c8f7a69a7f76400ab-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596217966856,
+          "stop": 1596217969001
+        },
+        {
+          "name": "2 - Verify if the GetOrderStatus() method return 'Operational Hold' on CurrentOrderStatus field",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Expected string length 15 but was 14. Strings differ at index 0.\r\n  Expected: \"Compliance Hold\"\r\n  But was:  \"Operation Hold\"\r\n  -----------^\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.cs:line 394\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.cs:line 382\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.That.cs:line 247\r\n   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.Equality.cs:line 128\r\n   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.<>c__DisplayClass8_0.<CheckGetOrderDetailForComplianceHoldTransaction>b__1() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 204\r\n   at WhiteWingsApi.BaseTest.<>c__DisplayClass6_0.<LogStep>b__0() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "7c6fa1f301224f8bbf1fc16fe5added9-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "8b564142a1064dec8a5840bf7a7b44ad-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596217969001,
+          "stop": 1596217969398
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e7d7e222327440a08ee6a4ca243435e8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596217966854,
+      "stop": 1596217970400
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596217966852,
+  "stop": 1596217970408
+}

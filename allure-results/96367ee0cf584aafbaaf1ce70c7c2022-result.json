@@ -1,0 +1,122 @@
+{
+  "uuid": "d3e6d630-f2d6-44ac-bbb4-9a9d188e2773-tr-0-1058",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry.CheckGetPayerListByCountryResponseWhenDestinationCountryIdInvalid",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry.CheckGetPayerListByCountryResponseWhenDestinationCountryIdInvalid",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetPayerListByCountryResponseWhenDestinationCountryIdInvalid"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4591"
+    },
+    {
+      "name": "tag",
+      "value": "C28995928"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetPayerListByCountryResponseWhenDestinationCountryIdInvalid",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetPayerListByCountry() when DestinationCountryId field is Invalid\n",
+  "steps": [
+    {
+      "name": "CheckGetPayerListByCountryResponseWhenDestinationCountryIdInvalid",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerListByCountry()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerListByCountry'",
+              "source": "f4f8d6e3f86243afbbc28aea4697a087-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerListByCountry'",
+              "source": "4e1ff1010b404830856144734ca0e4c8-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215065474,
+          "stop": 1596215065776
+        },
+        {
+          "name": "2 - Check an error message 'Invalid Country' is displayed in response",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215065776,
+          "stop": 1596215065776
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "67742623f38e440189ebb46333805626-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215065474,
+      "stop": 1596215066235
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215065474,
+  "stop": 1596215066235
+}

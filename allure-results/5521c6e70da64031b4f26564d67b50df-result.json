@@ -1,0 +1,137 @@
+{
+  "uuid": "7f81be94-a1c2-40bd-a8bd-0b37afa66943-tr-0-1053",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank.CheckGetPayersByBankResponseShowsPayersAndSubPayersByBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank.CheckGetPayersByBankResponseShowsPayersAndSubPayersByBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetPayersByBankResponseShowsPayersAndSubPayersByBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4594"
+    },
+    {
+      "name": "tag",
+      "value": "C28998068"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetPayersByBankResponseShowsPayersAndSubPayersByBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if GetPayersByBank() response shows Payers and subpayers by Bank\n",
+  "steps": [
+    {
+      "name": "CheckGetPayersByBankResponseShowsPayersAndSubPayersByBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayersByBank()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayersByBank'",
+              "source": "d14654cda6854533ac6c1caff5b3e34c-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayersByBank'",
+              "source": "2fac92d6e1294b44adc6add7f5c5232b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215070861,
+          "stop": 1596215071224
+        },
+        {
+          "name": "2 - Check response should display Payers by Bank",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215071224,
+          "stop": 1596215071225
+        },
+        {
+          "name": "3 - Check response should display SubPayers by Bank",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215071225,
+          "stop": 1596215071226
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "aa18c97731eb49e3b34450c5ab293d6f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215070860,
+      "stop": 1596215071684
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215070860,
+  "stop": 1596215071684
+}

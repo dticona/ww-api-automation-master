@@ -1,0 +1,122 @@
+{
+  "uuid": "7eb3d64e-7cad-4dc4-9b30-bfa146221029-tr-0-1010",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckGetFeesFXDataWithoutPayerShowsFee",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckGetFeesFXDataWithoutPayerShowsFee",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetFeesFXDataWithoutPayerShowsFee"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4571"
+    },
+    {
+      "name": "tag",
+      "value": "C28590397"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetFeesFXDataWithoutPayerShowsFee",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if GetFeesFXDataWithoutPayer shows fee\n",
+  "steps": [
+    {
+      "name": "CheckGetFeesFXDataWithoutPayerShowsFee",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeesFXDataWithoutPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "4face4e2dbb44fe6bf45127f3ff00a55-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "6ebf7852c25e46978547331aad7ebe1c-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215034914,
+          "stop": 1596215035421
+        },
+        {
+          "name": "2 - Check The response should display correct fields",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215035421,
+          "stop": 1596215035422
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "1422e0f9dbc54bd3a6e5058907443fd0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215034901,
+      "stop": 1596215035927
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215034901,
+  "stop": 1596215035927
+}

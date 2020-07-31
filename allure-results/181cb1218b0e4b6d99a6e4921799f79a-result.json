@@ -1,0 +1,122 @@
+{
+  "uuid": "e6519760-7b44-4b7a-a9ee-3f9f6f8452b7-tr-0-1119",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountGuarantyTrust",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountGuarantyTrust",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountGuarantyTrust"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4440"
+    },
+    {
+      "name": "tag",
+      "value": "C64889584"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountGuarantyTrust",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for Guaranty Trust Bank Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountGuarantyTrust",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Guaranty Trust Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "4a352cc548294b60a2897a443bbe146f-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "c87136fcbb704dc3ad9dfbb8a7a763ad-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215132811,
+          "stop": 1596215134887
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner ADIGUN OMOTAYO MUFTAU",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215134887,
+          "stop": 1596215134887
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "57612e4e02ac4ae2b51c23586f19628d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215132801,
+      "stop": 1596215135344
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215132801,
+  "stop": 1596215135344
+}

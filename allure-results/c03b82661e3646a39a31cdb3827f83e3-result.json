@@ -1,0 +1,122 @@
+{
+  "uuid": "d9d4d776-8375-49a5-9cfb-5946d38dbb16-tr-0-1120",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountEcoBankNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountEcoBankNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountEcoBankNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4442"
+    },
+    {
+      "name": "tag",
+      "value": "C64889589"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountEcoBankNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for Ecobank Nigeria Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountEcoBankNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Ecobank Nigeria Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "7fd9d15a77154bd9b6983353c7ccf549-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "c0bdc50b54f54ccc9ab7fbcea8a34512-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215121856,
+          "stop": 1596215123971
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner MOEMEKE LUCKY VICTOR",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215123971,
+          "stop": 1596215123971
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ecbe70dfa41f46fc894c3c1ae3125803-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215121845,
+      "stop": 1596215124435
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215121845,
+  "stop": 1596215124435
+}

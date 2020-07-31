@@ -1,0 +1,122 @@
+{
+  "uuid": "49ae190b-55ec-448a-8202-c80aa25cc053-tr-0-1037",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidRecipientCurrencyField",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidRecipientCurrencyField",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidRecipientCurrencyField"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4541"
+    },
+    {
+      "name": "tag",
+      "value": "C19593575"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidRecipientCurrencyField",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the GetPayerRoundingRules () does not display the 'Round Receiving Amount Nearest Multiple' rules if the Recipient Currency is invalid.\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidRecipientCurrencyField",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerRoundingRules()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "b8fc31b57a4740d394091943dd27037d-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "e9413ea240984551a43642df0d5aae84-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215067753,
+          "stop": 1596215068058
+        },
+        {
+          "name": "2 - The response should display following error message: Invalid Recipient Currency.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215068058,
+          "stop": 1596215068059
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "60b10aa859904cd3863995666f99fd65-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215067753,
+      "stop": 1596215068557
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215067753,
+  "stop": 1596215068557
+}

@@ -1,0 +1,61 @@
+{
+  "uuid": "ec5eb999-1879-4d0e-ac16-a62af113117e-tc-0-1106",
+  "name": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount.CheckValidateTransferToAccountResponseResultWhenSubPayerIdIsNotListedForMobileWallet",
+  "children": [
+    "9bfbd4f8-71fb-4d32-bbe8-44fe5736d972-tr-0-1109"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215160057,
+      "stop": 1596215160057
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215160057,
+      "stop": 1596215160057
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215160057,
+      "stop": 1596215160057
+    }
+  ],
+  "links": [],
+  "start": 1596215159309,
+  "stop": 1596215160059
+}

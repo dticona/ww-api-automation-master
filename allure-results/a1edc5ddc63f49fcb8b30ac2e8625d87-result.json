@@ -1,0 +1,132 @@
+{
+  "uuid": "391c6bb8-c344-49e2-a0af-c5d8fb23e364-tr-0-1095",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidPocId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidPocId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageProcessTransactionWithInvalidPocId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4604"
+    },
+    {
+      "name": "tag",
+      "value": "C17154707"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageProcessTransactionWithInvalidPocId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Get ProcessTransaction () using an 'Invalid POC ID'.\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageProcessTransactionWithInvalidPocId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "fbb3bfeab4364adaad92275890cf09d6-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "28a7e62eafcc48c8b81307cb1252515b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215077547,
+          "stop": 1596215077989
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Point of Contact' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215077989,
+          "stop": 1596215077990
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "3d96c7e207574cffa800c40a671b3a02-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "3b852b2a29ab4f1caf4a1a60ebd9a964-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "1a170d6e1e294efd8b11a752e6931623-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215077228,
+      "stop": 1596215078453
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215077228,
+  "stop": 1596215078453
+}

@@ -1,0 +1,61 @@
+{
+  "uuid": "70833870-3fe9-4109-a20a-1091faea98cf-tc-0-1065",
+  "name": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckCancelOrderRequestHasInvalidUserId",
+  "children": [
+    "4c6cc27d-1367-4465-89de-53249db71f27-tr-0-1067"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215020006,
+      "stop": 1596215020006
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215020006,
+      "stop": 1596215020006
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215020006,
+      "stop": 1596215020006
+    }
+  ],
+  "links": [],
+  "start": 1596215018741,
+  "stop": 1596215020008
+}

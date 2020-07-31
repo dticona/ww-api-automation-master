@@ -1,0 +1,122 @@
+{
+  "uuid": "bb671b17-67fc-40ab-8596-2f71b63c66ce-tr-0-1045",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCreateSender.CheckItIsNotPossibleCreateNewSenderWithInvalidDOB",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCreateSender.CheckItIsNotPossibleCreateNewSenderWithInvalidDOB",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateSender"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckItIsNotPossibleCreateNewSenderWithInvalidDOB"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateSender"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4557"
+    },
+    {
+      "name": "tag",
+      "value": "C17165285"
+    }
+  ],
+  "links": [],
+  "name": "CheckItIsNotPossibleCreateNewSenderWithInvalidDOB",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that it is not possible to create a Sender with an invalid 'DOB'.\n",
+  "steps": [
+    {
+      "name": "CheckItIsNotPossibleCreateNewSenderWithInvalidDOB",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `CreateSender()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateSender'",
+              "source": "82c4ccf498fb45e8a878608516fcf0fe-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateSender'",
+              "source": "65e8637d56de4625a8e8fe74faa00ea7-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215025531,
+          "stop": 1596215025827
+        },
+        {
+          "name": "2 - Check that response has 'Invalid date of birth.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215025827,
+          "stop": 1596215025827
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "61a332ebd62b40d2ba04ee203cb3b534-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215025524,
+      "stop": 1596215026290
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215025524,
+  "stop": 1596215026290
+}

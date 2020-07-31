@@ -1,0 +1,122 @@
+{
+  "uuid": "4b030239-7532-453f-a17e-3ffcdef4872f-tr-0-1035",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidSubPayerIDField",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidSubPayerIDField",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidSubPayerIDField"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4535"
+    },
+    {
+      "name": "tag",
+      "value": "C19355905"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidSubPayerIDField",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the GetPayerRoundingRules () does not display the 'Round Receiving Amount Nearest Multiple' rules if the SubPayerID is invalid.\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidSubPayerIDField",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerRoundingRules()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "0e98e9c3933e4f85b881c4b471621ab5-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "354d037ae36e4b83a21ae69a15446a97-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215068559,
+          "stop": 1596215068857
+        },
+        {
+          "name": "2 - The response should display following error message: Invalid SubPayer payer ID.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215068857,
+          "stop": 1596215068858
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "fddf38e5748c4dc4b20d5bed25cc2bf4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215068559,
+      "stop": 1596215069321
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215068559,
+  "stop": 1596215069321
+}

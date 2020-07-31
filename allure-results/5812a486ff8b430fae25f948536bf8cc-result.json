@@ -1,0 +1,122 @@
+{
+  "uuid": "aca43c2b-883b-4cb5-8e4e-602e9b1fac7c-tr-0-1048",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCreateRecipient.CheckItIsPossibleCreateNewRecipient",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCreateRecipient.CheckItIsPossibleCreateNewRecipient",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateRecipient"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckItIsPossibleCreateNewRecipient"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCreateRecipient"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4556"
+    },
+    {
+      "name": "tag",
+      "value": "C10843007"
+    }
+  ],
+  "links": [],
+  "name": "CheckItIsPossibleCreateNewRecipient",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if is possible to create a Recipient throughout API\n",
+  "steps": [
+    {
+      "name": "CheckItIsPossibleCreateNewRecipient",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the ` CreateRecipient()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateRecipient'",
+              "source": "e0b5ee63c2f740b7806e149e64cff1f3-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateRecipient'",
+              "source": "479a9a522575496197fe1ce8708ff0a8-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215023899,
+          "stop": 1596215024221
+        },
+        {
+          "name": "2 - Check response should return the MTS_Receiver_UID",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215024221,
+          "stop": 1596215024221
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6e83a7c84e5a451c8f92cbf380703fa0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215023893,
+      "stop": 1596215024703
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215023893,
+  "stop": 1596215024704
+}

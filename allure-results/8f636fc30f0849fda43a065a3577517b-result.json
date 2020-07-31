@@ -1,0 +1,142 @@
+{
+  "uuid": "c3531027-637b-4d52-a140-107b868e8271-tr-0-1077",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes.CheckSetTransactionNotesIfNoteIsAdded",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes.CheckSetTransactionNotesIfNoteIsAdded",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckSetTransactionNotesIfNoteIsAdded"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4406"
+    },
+    {
+      "name": "tag",
+      "value": "C19611025"
+    }
+  ],
+  "links": [],
+  "name": "CheckSetTransactionNotesIfNoteIsAdded",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if a note is created using the SetTransactionNote() method.\n",
+  "steps": [
+    {
+      "name": "CheckSetTransactionNotesIfNoteIsAdded",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request using SetTransactionNote() with the following values",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/SetTransactionNote'",
+              "source": "68e17f20b1894538a55cc64b20763d84-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/SetTransactionNote'",
+              "source": "14bd382a45f74e9cb2a0ea0007effa1d-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215096890,
+          "stop": 1596215097192
+        },
+        {
+          "name": "2. Verify if the response returns the Transaction Note ID",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215097192,
+          "stop": 1596215097193
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "4ebd5996fe864952bf7a6e03790ed078-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "337c1b80b2e54369a3b342b5f1a8a4f6-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+          "source": "57d0636f49cc474ab429c48de2d74018-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+          "source": "80ac2d99cd0d494bbbd6f7c3895fca49-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "33e80d54d03b4c0882e2a466ebd71325-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215095915,
+      "stop": 1596215097661
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215095915,
+  "stop": 1596215097661
+}

@@ -1,0 +1,158 @@
+{
+  "uuid": "5581c709-91d8-4b63-8bdf-f3f37aa24cd1-tr-0-1025",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus.CheckGetOrderStatusForExpiredTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus.CheckGetOrderStatusForExpiredTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderStatusForExpiredTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4799"
+    },
+    {
+      "name": "tag",
+      "value": "C78196163"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderStatusForExpiredTransaction",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that GetOrderStatus returns status 'Expired' for Expired transactions\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderStatusForExpiredTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an UnPaid transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "2c5d142f7063421b8ee782fb3bcc31d8-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "f29206938ba7466bb20426d9e35a05ba-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "5f284e0b46c843a19ebf63c45639df48-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "f3e0f0e17c0746f79359223950e123cb-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215045166,
+          "stop": 1596215046130
+        },
+        {
+          "name": "2 - Change the transaction status to Expired",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215046130,
+          "stop": 1596215046333
+        },
+        {
+          "name": "3 - Verify if the GetOrderStatus() method return 'Expired' on CurrentOrderStatus field",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderStatus'",
+              "source": "ec16857f17a34c7ab98dd7268363c819-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderStatus'",
+              "source": "007bb4d587c04c598a917054b201b4ca-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215046333,
+          "stop": 1596215046660
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "06b8a5b8a7864a3a99bb4e240a17c2c2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215045166,
+      "stop": 1596215047121
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215045166,
+  "stop": 1596215047121
+}

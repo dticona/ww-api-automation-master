@@ -1,0 +1,122 @@
+{
+  "uuid": "56dbb17a-46d0-41de-8d1c-3abefc7217e0-tr-0-1137",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationUnionBankOfNigeriaPlc",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationUnionBankOfNigeriaPlc",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationUnionBankOfNigeriaPlc"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4455"
+    },
+    {
+      "name": "tag",
+      "value": "C65081163"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationUnionBankOfNigeriaPlc",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response return the name of the account owner for Union Bank Of Nigeria Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationUnionBankOfNigeriaPlc",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Union Bank Of Nigeria Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "239ca756715140d9b8d5d05e7e68d74f-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "36b9d59e13454c6dbf37d0914acaab51-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215189827,
+          "stop": 1596215193652
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  FADIPE SUNDAY JAMES",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215193652,
+          "stop": 1596215193653
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "335c0f2ff9424b1ba9f7bea031c79ccc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215189818,
+      "stop": 1596215194110
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215189818,
+  "stop": 1596215194110
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "1ba2ec76-043b-4d65-a455-97efb741929b-tr-0-1015",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenRecipientCountryFieldIsEmpty",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenRecipientCountryFieldIsEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenRecipientCountryFieldIsEmpty"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4578"
+    },
+    {
+      "name": "tag",
+      "value": "C28693298"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenRecipientCountryFieldIsEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed on GetFeesFXDataWithoutPayer response when RecipientCountry field is empty\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenRecipientCountryFieldIsEmpty",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeesFXDataWithoutPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "2e0a281a65c44b71ac3f0ceec58f4a98-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "e0898b60a0244efdbcf0161448df7150-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215039228,
+          "stop": 1596215039521
+        },
+        {
+          "name": "2 - Check that response has 'Recipient country id is required.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215039521,
+          "stop": 1596215039522
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c25a3cfb597e4ec2b6427c733ab77761-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215039219,
+      "stop": 1596215039983
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215039219,
+  "stop": 1596215039983
+}

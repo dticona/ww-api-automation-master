@@ -1,0 +1,122 @@
+{
+  "uuid": "703f54a4-e1f1-4fbd-bfba-c8bb9c05e3fb-tr-0-1017",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerWhenRecipientCountryIsInvalid",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerWhenRecipientCountryIsInvalid",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeesFXDataWithoutPayerWhenRecipientCountryIsInvalid"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4579"
+    },
+    {
+      "name": "tag",
+      "value": "C28693716"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeesFXDataWithoutPayerWhenRecipientCountryIsInvalid",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the error message is displayed on GetFeesFXDataWithoutPayer response when RecipientCountry is invalid\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeesFXDataWithoutPayerWhenRecipientCountryIsInvalid",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeesFXDataWithoutPayer()` providing an Invalid Country on the Request",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "49823415b55540fe8819bac2392e450a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer'",
+              "source": "194976db18cc4867991621c50b9ed16e-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215040772,
+          "stop": 1596215041179
+        },
+        {
+          "name": "2 - Check that response has 'Invalid recipient country.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215041179,
+          "stop": 1596215041179
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8512dc4f66654826a46b3f5fb8378fcf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215040764,
+      "stop": 1596215041656
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215040764,
+  "stop": 1596215041656
+}

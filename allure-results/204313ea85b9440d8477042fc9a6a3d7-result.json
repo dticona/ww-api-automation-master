@@ -1,0 +1,122 @@
+{
+  "uuid": "097c60a9-afa6-4970-8fa8-7b0eca99eaf9-tr-0-1114",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountFirtsBankOfNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountFirtsBankOfNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountFirtsBankOfNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-3953"
+    },
+    {
+      "name": "tag",
+      "value": "C18083687"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountFirtsBankOfNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for First Bank of Nigeria \n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountFirtsBankOfNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Firts Bank of Nigeria",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "bc24ac92898b4ad39dc9e75527a9f13a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "9dc90000ff274bec9a1595a874c00f3e-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215127202,
+          "stop": 1596215129701
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner AGUONIGHO RHODA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215129701,
+          "stop": 1596215129701
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dbc4da61d65f469ba3919127d0be0ea5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215127193,
+      "stop": 1596215130160
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215127193,
+  "stop": 1596215130161
+}

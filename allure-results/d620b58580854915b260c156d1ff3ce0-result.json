@@ -1,0 +1,158 @@
+{
+  "uuid": "a0bfffa8-d74b-42e4-af15-c3e2f87d88e6-tr-0-1026",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus.CheckGetOrderStatusForInPayerReviewTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus.CheckGetOrderStatusForInPayerReviewTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderStatusForInPayerReviewTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4863"
+    },
+    {
+      "name": "tag",
+      "value": "C84950222"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderStatusForInPayerReviewTransaction",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the GetOrderStatus() returns 'In Payer Review' status.\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderStatusForInPayerReviewTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an UnPaid transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "59eee0f91fbf497cadb2a4a4b586b005-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "d54070b0535e448782671da13113724a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "698119b97a534074aec12b20f6ff9954-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "df8d6e6e05474bea9b78e1d49f9b992f-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215047124,
+          "stop": 1596215048091
+        },
+        {
+          "name": "2 - Change the transaction status to In Payer Review",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215048091,
+          "stop": 1596215048285
+        },
+        {
+          "name": "3 - Verify if the GetOrderStatus() method return 'Expired' on CurrentOrderStatus field",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderStatus'",
+              "source": "cf78ffe48efe4f738ad86ea458c6ee39-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderStatus'",
+              "source": "54ca76ff2e06497aa45022aa64033d96-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215048285,
+          "stop": 1596215048579
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "18f3aef8fbb3478283963233ecc1af43-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215047123,
+      "stop": 1596215049047
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215047123,
+  "stop": 1596215049047
+}

@@ -1,0 +1,179 @@
+{
+  "uuid": "5ba503fe-f860-4515-9ee2-2832508e54fc-tr-0-1029",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus.CheckGetOrderStatusForVoidTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus.CheckGetOrderStatusForVoidTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderStatusForVoidTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4864"
+    },
+    {
+      "name": "tag",
+      "value": "C66554147 "
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderStatusForVoidTransaction",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify GetOrderStatus() returns the status of a Void transaction\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderStatusForVoidTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an Operational Hold transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "94cf8cb95abd4992ac2607dfb2e9137b-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "b24ea661055140acaefb0138fc841b66-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "5d807d94fba34e9e97abbfbb17b40a17-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "fae0c672d3324499aebcb4653bbd3a40-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215055301,
+          "stop": 1596215056267
+        },
+        {
+          "name": "2 - Cancel the transation using the CancelOrder method",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "66d57c18d3714198af651c2672e95237-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "82cce70c4c6242b0afe620a35250dc29-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "4f3a4d70e6af4bbfb4fa42119acb68fa-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "7f281859abf8475b89017c78d6c05da6-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215056267,
+          "stop": 1596215057060
+        },
+        {
+          "name": "3 - Verify if the GetOrderStatus() method return 'Operational Hold' on CurrentOrderStatus field",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderStatus'",
+              "source": "a6d8a4ed87d14b6baa087a0f108a37d0-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderStatus'",
+              "source": "cdae910025b3449ca3cbb5debff38df6-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215057060,
+          "stop": 1596215057371
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "91c88aee7d4244938792b6f11815d483-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215055300,
+      "stop": 1596215057838
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215055300,
+  "stop": 1596215057838
+}

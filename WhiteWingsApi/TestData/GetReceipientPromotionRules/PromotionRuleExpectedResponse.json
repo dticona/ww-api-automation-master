@@ -1,0 +1,17 @@
+﻿{
+	"Amount": 5.0000,
+	"DeliveryMethod": "All",
+	"DestinationCountryISOCode": "MEX",
+	"EndDate": "2017-01-31T00:00:00",
+	"IncludedAgentList": ["PRODTEST717"],
+	"IsActive": "Yes",
+	"PayerCode": "All",
+	"PayerID": 0,
+	"PromotionLabel": "Falling Leaves",
+	"PromotionType": "Fixed",
+	"RangeBegin": 1.0000,
+	"RangeEnd": 500.0000,
+	"SourceCountryISOCode": "USA",
+	"StartDate": "2016-11-28T00:00:00",
+	"SubPayerID": 0
+}

@@ -1,0 +1,132 @@
+{
+  "uuid": "2e6cf08f-3caf-4556-8607-6df427673a4c-tr-0-1094",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckProcessTransactionHasHoldStatus",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckProcessTransactionHasHoldStatus",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckProcessTransactionHasHoldStatus"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-1409"
+    },
+    {
+      "name": "tag",
+      "value": "C4737406"
+    }
+  ],
+  "links": [],
+  "name": "CheckProcessTransactionHasHoldStatus",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Process a transaction that has PROCESSING HOLD status\n",
+  "steps": [
+    {
+      "name": "CheckProcessTransactionHasHoldStatus",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "29083a502dfe4700b19178dd59d43fde-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "9f9a35cbb6284895baa212d2ec65e384-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215081126,
+          "stop": 1596215081663
+        },
+        {
+          "name": "2 - Check that transaction has 'Processing hold' status",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215081663,
+          "stop": 1596215081663
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "2453ba7405b94dbf8625050389c7070f-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "e7e114cce6cd498c9ba2ddb74cca54d9-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "5449f735a55441e9b5217af1a01ea41f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215080805,
+      "stop": 1596215082127
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215080805,
+  "stop": 1596215082127
+}

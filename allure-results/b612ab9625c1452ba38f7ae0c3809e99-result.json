@@ -1,0 +1,132 @@
+{
+  "uuid": "79542613-bbf3-47f3-a8ac-52f878a6d829-tr-0-1101",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckProcessTransactionUnPaidStatus",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckProcessTransactionUnPaidStatus",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckProcessTransactionUnPaidStatus"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-3924"
+    },
+    {
+      "name": "tag",
+      "value": "C17270217"
+    }
+  ],
+  "links": [],
+  "name": "CheckProcessTransactionUnPaidStatus",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Process a transaction that has UnPaid status by ProcessTransaction() Method\n",
+  "steps": [
+    {
+      "name": "CheckProcessTransactionUnPaidStatus",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "048549e123ad4e9c9b7b4cfa7f7e0199-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "48ffc7d9cd0648dea48035b6919bf73d-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215084044,
+          "stop": 1596215084681
+        },
+        {
+          "name": "2 - Check that transaction has 'UNPAID' status",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215084681,
+          "stop": 1596215084681
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "ef233577688346358898a3abdbde54a8-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "e9337e1328ad461e88fd556fc7721485-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "0574bcf870dc418ba85cdda82bb266ef-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215083714,
+      "stop": 1596215085131
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215083714,
+  "stop": 1596215085131
+}

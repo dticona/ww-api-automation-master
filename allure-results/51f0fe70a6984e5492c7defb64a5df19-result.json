@@ -1,0 +1,122 @@
+{
+  "uuid": "87a2596d-b3d2-410b-ae1d-7653c2546751-tr-0-1133",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationAccessBankPlc",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationAccessBankPlc",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationAccessBankPlc"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4499"
+    },
+    {
+      "name": "tag",
+      "value": "C65581117"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationAccessBankPlc",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for Access Bank Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationAccessBankPlc",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Access Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "835570eb383b445ebd4ba2d7ddf310e8-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "3df7e16195024f43afd2575a31f0ba62-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215160074,
+          "stop": 1596215162891
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  VERONICA ASHAKA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215162891,
+          "stop": 1596215162892
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "795587321c7643eb88ffb86f556e68ce-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215160061,
+      "stop": 1596215163357
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215160061,
+  "stop": 1596215163358
+}

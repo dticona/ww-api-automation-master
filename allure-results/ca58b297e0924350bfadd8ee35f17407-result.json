@@ -1,0 +1,158 @@
+{
+  "uuid": "1e3d6285-99a5-46da-9f70-77dabbd29aba-tr-0-1089",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckItIsPossibleToChangeStatusProcessingHoldToComplianceHoldByUpdateHoldStatusResponse",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckItIsPossibleToChangeStatusProcessingHoldToComplianceHoldByUpdateHoldStatusResponse",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckItIsPossibleToChangeStatusProcessingHoldToComplianceHoldByUpdateHoldStatusResponse"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4619"
+    },
+    {
+      "name": "tag",
+      "value": "C23423075"
+    }
+  ],
+  "links": [],
+  "name": "CheckItIsPossibleToChangeStatusProcessingHoldToComplianceHoldByUpdateHoldStatusResponse",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if its possible change status Processing Hold to Compliance Hold by API method 'UpdateHoldStatus()'.\n",
+  "steps": [
+    {
+      "name": "CheckItIsPossibleToChangeStatusProcessingHoldToComplianceHoldByUpdateHoldStatusResponse",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request on the soap API that has Processing Hold status",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "f57923e676c54361aad0547ce2a5b81b-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "60ed081333274430a2e94ebb33509908-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "ae2816449b4d4347b5d64991350382aa-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "d9208ee9e9c9479b97a362897e88b648-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215109495,
+          "stop": 1596215110497
+        },
+        {
+          "name": "2 - Run the `UpdateHoldStatus()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "42cf20f343934b3a9e159b6efd312032-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "d12a8090fbe04d1c8de3c93aa6bf2a50-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215110497,
+          "stop": 1596215110978
+        },
+        {
+          "name": "3 - Check that response return 'Transactions status changed from Processing Hold to Compliance Hold' message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215110978,
+          "stop": 1596215110978
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "88463f74c046442795b0f61e486736a8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215109486,
+      "stop": 1596215111442
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215109486,
+  "stop": 1596215111442
+}

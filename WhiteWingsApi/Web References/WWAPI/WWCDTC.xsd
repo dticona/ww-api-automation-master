@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" />
+  <xs:element name="GetPayerList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetPayerListResult" nillable="true" type="q1:PayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerListByCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DestinationCountryId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerListByCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetPayerListByCountryResult" nillable="true" type="q2:PayersByCountryList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubPayerListByPayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubPayerListByPayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetSubPayerListByPayerResult" nillable="true" type="q3:SubPayerByPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubPayerListByCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubPayerListByCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetSubPayerListByCountryResult" nillable="true" type="q4:SubPayerByCountryList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointofContactListBySubpayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPointofContactListBySubpayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetPointofContactListBySubpayerResult" nillable="true" type="q5:PointofContactBySubPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerCommission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerCommissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetPayerCommissionResult" nillable="true" type="q6:PayerCommissionList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFxGivenPayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamFxGivenPayer" nillable="true" type="q7:ParamFxGivenPayer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFxGivenPayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetFxGivenPayerResult" nillable="true" type="q8:FxGivenPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeesFXDataWithoutPayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamFeeFXDataWithoutPayer" nillable="true" type="q9:ParamFeeFXDataWithoutPayer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeesFXDataWithoutPayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetFeesFXDataWithoutPayerResult" nillable="true" type="q10:FeeFXDataWithoutPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeeFXDataWithPayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamFeeFxDataWithPayer" nillable="true" type="q11:ParamFeeFxDataWithPayer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFeeFXDataWithPayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetFeeFXDataWithPayerResult" nillable="true" type="q12:FeeFxDataWithPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcessTransaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamProcessTransaction" nillable="true" type="q13:ParamProcessTransaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProcessTransactionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ProcessTransactionResult" nillable="true" type="q14:OutputParamProcessTransaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReleaseOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReleaseOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ReleaseOrderResult" nillable="true" type="q15:OutputParamReleaseOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContinueOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamContinueOrder" nillable="true" type="q16:ParamContinueOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContinueOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ContinueOrderResult" nillable="true" type="q17:OutputParamContinueOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetOrderStatusResult" nillable="true" type="q18:OutputParamOrderStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ReasonID" type="xs:int" />
+        <xs:element minOccurs="0" name="CancelRemarks" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CancelReason" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelOrderRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="CancelOrderRequestResult" nillable="true" type="q19:OutputParamCancelOrderRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetOrderDetailResult" nillable="true" type="q20:OutputParamOrderDetail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankByPayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PayerID" type="xs:long" />
+        <xs:element minOccurs="0" name="SubPayerID" type="xs:long" />
+        <xs:element minOccurs="0" name="DestinationCountryID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankByPayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetBankByPayerResult" nillable="true" type="q21:BankByPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayersByBank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayersByBankResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetPayersByBankResult" nillable="true" type="q22:PayersByBankList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBanksByCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DestinationCountryID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PayerId" type="xs:int" />
+        <xs:element minOccurs="0" name="SubPayerId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBanksByCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetBanksByCountryResult" nillable="true" type="q23:BankByCountryList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSender">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamSender" nillable="true" type="q24:ParamCreateSender" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSenderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="CreateSenderResult" nillable="true" type="q25:OutputParamCreateSender" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSender">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamSender" nillable="true" type="q26:ParamUpdateSender" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSenderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="UpdateSenderResult" nillable="true" type="q27:OutputParamUpdateSender" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateRecipient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamRecipient" nillable="true" type="q28:ParamCreateRecipient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateRecipientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="CreateRecipientResult" nillable="true" type="q29:OutputParamCreateRecipient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRecipient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamRecipient" nillable="true" type="q30:ParamUpdateRecipient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRecipientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="UpdateRecipientResult" nillable="true" type="q31:OutputParamUpdateRecipient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSenderGivenID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSenderGivenIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetSenderGivenIDResult" nillable="true" type="q32:ParamSender" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecipientGivenID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecipientGivenIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetRecipientGivenIDResult" nillable="true" type="q33:ParamRecipient" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCountryList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCountryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetCountryListResult" nillable="true" type="q34:CountryList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStateListByCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStateListByCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetStateListByCountryResult" nillable="true" type="q35:StateByCountryList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCityByState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StateId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCityByStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetCityByStateResult" nillable="true" type="q36:CityByStateList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewCpasId">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewCpasIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="CreateNewCpasIdResult" nillable="true" type="q37:OutputParamCreateCPASId" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCustomerIdentification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamSaveCustomerIdentification" nillable="true" type="q38:ParamSaveCustomerIdentification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCustomerIdentificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="SaveCustomerIdentificationResult" nillable="true" type="q39:OutputParamSaveCustomerIdentification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceipientPromotionRules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SourceCountryISOCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DestinationCountryISOCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AgentCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReceipientPromotionRulesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetReceipientPromotionRulesResult" nillable="true" type="q40:PromotionRuleList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetTransactionNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamTransaction" nillable="true" type="q41:ParamTransactionNote" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetTransactionNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="SetTransactionNoteResult" nillable="true" type="q42:OutputParamTransactionNote" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionNotes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CPASID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionNotesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetTransactionNotesResult" nillable="true" type="q43:GetTransactionNotesList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MigrateAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamMigrateAgent" nillable="true" type="q44:ParamMigrateAgent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MigrateAgentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="MigrateAgentResult" nillable="true" type="q45:OutputParamMigrateAgent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateMFSAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamValidateMFSAccount" nillable="true" type="q46:ParamValidateMFSAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateMFSAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ValidateMFSAccountResult" nillable="true" type="q47:OutputValidateMFSAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateMFSBankAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamValidateMFSBankAccount" nillable="true" type="q48:ParamValidateMFSBankAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateMFSBankAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ValidateMFSBankAccountResult" nillable="true" type="q49:OutputValidateMFSBankAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTransferToAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamValidateTransferToAccount" nillable="true" type="q50:ParamValidateTransferToAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateTransferToAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ValidateTransferToAccountResult" nillable="true" type="q51:OutputValidateTransferToAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateBitPesaAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamValidateBitPesaAccount" nillable="true" type="q52:ParamValidateBitPesaAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateBitPesaAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ValidateBitPesaAccountResult" nillable="true" type="q53:OutputValidateBitPesaAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerRoundingRules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DestinationCountry" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PayerID" type="xs:long" />
+        <xs:element minOccurs="0" name="SubPayerID" type="xs:long" />
+        <xs:element minOccurs="0" name="RecipientCurrency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoundingMultiple" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPayerRoundingRulesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetPayerRoundingRulesResult" nillable="true" type="q54:PayerRoundingRulesList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHoldStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NewStatus" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHoldStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="UpdateHoldStatusResult" nillable="true" type="q55:OutputUpdateHoldStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNotesByAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgentCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNotesByAgentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetNotesByAgentResult" nillable="true" type="q56:NotesByAgentList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VTNBankAccountValidation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="param" nillable="true" type="q57:ParamVTNBankAccountValidation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VTNBankAccountValidationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="VTNBankAccountValidationResult" nillable="true" type="q58:OutputVTNBankAccountValidation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCancellationReasonsList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCancellationReasonsListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetCancellationReasonsListResult" nillable="true" type="q59:CancellationReasonsList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateBancoIndustrialAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ParamBancoAccountValidation" nillable="true" type="q60:BancoAccountValidation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateBancoIndustrialAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="ValidateBancoIndustrialAccountResult" nillable="true" type="q61:OutputBancoAccountValidation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankBranchByPayer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PayerID" type="xs:int" />
+        <xs:element minOccurs="0" name="SubPayerID" type="xs:int" />
+        <xs:element minOccurs="0" name="CountryISOCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IssuerCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MTSBankID" type="xs:int" />
+        <xs:element minOccurs="0" name="PayerBankCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoutingNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBankBranchByPayerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" minOccurs="0" name="GetBankBranchByPayerResult" nillable="true" type="q62:BankBranchCodeByPayerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

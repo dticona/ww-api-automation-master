@@ -1,0 +1,122 @@
+{
+  "uuid": "05f3bc07-7344-4dd4-8176-a431e82a84e4-tr-0-1060",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry.CheckGetPayerListByCountryResponseWhenDestinationCountryIdFieldIsMoreThanThreeCharacters",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry.CheckGetPayerListByCountryResponseWhenDestinationCountryIdFieldIsMoreThanThreeCharacters",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetPayerListByCountryResponseWhenDestinationCountryIdFieldIsMoreThanThreeCharacters"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4593"
+    },
+    {
+      "name": "tag",
+      "value": "C28995930"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetPayerListByCountryResponseWhenDestinationCountryIdFieldIsMoreThanThreeCharacters",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetPayerListByCountry() when DestinationCountryId field contain more than 3 characters\n",
+  "steps": [
+    {
+      "name": "CheckGetPayerListByCountryResponseWhenDestinationCountryIdFieldIsMoreThanThreeCharacters",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerListByCountry()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerListByCountry'",
+              "source": "d40a5d11497f40daac8041be2e87bd0e-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerListByCountry'",
+              "source": "51f4d4b837e7478ea7c14085f0bcf96b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215064725,
+          "stop": 1596215065017
+        },
+        {
+          "name": "2 - Check an error message 'Country id must be three character only' is displayed in response",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215065017,
+          "stop": 1596215065017
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "0f5c6b474abd4f5f90f5efad79e8847f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215064724,
+      "stop": 1596215065473
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215064724,
+  "stop": 1596215065473
+}

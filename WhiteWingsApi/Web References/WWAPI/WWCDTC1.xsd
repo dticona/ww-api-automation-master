@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="PayerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ListPayers" nillable="true" type="tns:ArrayOfPayers" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayerList" nillable="true" type="tns:PayerList" />
+  <xs:complexType name="ArrayOfPayers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Payers" nillable="true" type="tns:Payers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayers" nillable="true" type="tns:ArrayOfPayers" />
+  <xs:complexType name="Payers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Payers" nillable="true" type="tns:Payers" />
+  <xs:complexType name="PayersByCountryList">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Payers" nillable="true" type="tns:ArrayOfPayersByCountry" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayersByCountryList" nillable="true" type="tns:PayersByCountryList" />
+  <xs:complexType name="ArrayOfPayersByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PayersByCountry" nillable="true" type="tns:PayersByCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayersByCountry" nillable="true" type="tns:ArrayOfPayersByCountry" />
+  <xs:complexType name="PayersByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayersByCountry" nillable="true" type="tns:PayersByCountry" />
+  <xs:complexType name="SubPayerByPayerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="SubPayers" nillable="true" type="tns:ArrayOfSubPayerByPayer" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubPayerByPayerList" nillable="true" type="tns:SubPayerByPayerList" />
+  <xs:complexType name="ArrayOfSubPayerByPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubPayerByPayer" nillable="true" type="tns:SubPayerByPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubPayerByPayer" nillable="true" type="tns:ArrayOfSubPayerByPayer" />
+  <xs:complexType name="SubPayerByPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BackOfficeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CancellationLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMethodList" nillable="true" type="tns:ArrayOfDeliveryMethod" />
+      <xs:element minOccurs="0" name="PayerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerCurrencyLimitRuleList" nillable="true" type="tns:ArrayOfSubPayerLimit" />
+      <xs:element minOccurs="0" name="SubPayerFeeSettlementCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="SubPayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerPrincipalSettlementCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerRecipientCurrencyISOCodeList" nillable="true" type="tns:ArrayOfRecipientCurrency" />
+      <xs:element minOccurs="0" name="SubPayerSenderCurrencyISOCodeList" nillable="true" type="tns:ArrayOfSenderCurrency" />
+      <xs:element minOccurs="0" name="SubPayerStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubPayerByPayer" nillable="true" type="tns:SubPayerByPayer" />
+  <xs:complexType name="ArrayOfDeliveryMethod">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeliveryMethod" nillable="true" type="tns:DeliveryMethod" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeliveryMethod" nillable="true" type="tns:ArrayOfDeliveryMethod" />
+  <xs:complexType name="DeliveryMethod">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strDeliveryMethod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeliveryMethod" nillable="true" type="tns:DeliveryMethod" />
+  <xs:complexType name="ArrayOfSubPayerLimit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubPayerLimit" nillable="true" type="tns:SubPayerLimit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubPayerLimit" nillable="true" type="tns:ArrayOfSubPayerLimit" />
+  <xs:complexType name="SubPayerLimit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AggregationBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AlertMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LimitDays" type="xs:int" />
+      <xs:element minOccurs="0" name="LimitTypeDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LimitTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceivingAmountCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecievingCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RuleID" type="xs:int" />
+      <xs:element minOccurs="0" name="RuleType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendingAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendingAmountCurrencyISOCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubPayerLimit" nillable="true" type="tns:SubPayerLimit" />
+  <xs:complexType name="ArrayOfRecipientCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RecipientCurrency" nillable="true" type="tns:RecipientCurrency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRecipientCurrency" nillable="true" type="tns:ArrayOfRecipientCurrency" />
+  <xs:complexType name="RecipientCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strRecipientCurrency" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RecipientCurrency" nillable="true" type="tns:RecipientCurrency" />
+  <xs:complexType name="ArrayOfSenderCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SenderCurrency" nillable="true" type="tns:SenderCurrency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSenderCurrency" nillable="true" type="tns:ArrayOfSenderCurrency" />
+  <xs:complexType name="SenderCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strSenderCurrency" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SenderCurrency" nillable="true" type="tns:SenderCurrency" />
+  <xs:complexType name="SubPayerByCountryList">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="SubPayers" nillable="true" type="tns:ArrayOfSubPayerByCountry" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubPayerByCountryList" nillable="true" type="tns:SubPayerByCountryList" />
+  <xs:complexType name="ArrayOfSubPayerByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubPayerByCountry" nillable="true" type="tns:SubPayerByCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubPayerByCountry" nillable="true" type="tns:ArrayOfSubPayerByCountry" />
+  <xs:complexType name="SubPayerByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BackOfficeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CancellationLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMethodList" nillable="true" type="tns:ArrayOfDeliveryMethod" />
+      <xs:element minOccurs="0" name="PayerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerCurrencyLimitRuleList" nillable="true" type="tns:ArrayOfSubPayerLimit" />
+      <xs:element minOccurs="0" name="SubPayerFeeSettlementCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="SubPayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerPrincipalSettlementCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerReceiverCurrencyList" nillable="true" type="tns:ArrayOfRecipientCurrency" />
+      <xs:element minOccurs="0" name="SubPayerSenderCurrencyList" nillable="true" type="tns:ArrayOfSenderCurrency" />
+      <xs:element minOccurs="0" name="SubPayerStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubPayerByCountry" nillable="true" type="tns:SubPayerByCountry" />
+  <xs:complexType name="PointofContactBySubPayerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PointofContacts" nillable="true" type="tns:ArrayOfPointofContactBySubPayer" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PointofContactBySubPayerList" nillable="true" type="tns:PointofContactBySubPayerList" />
+  <xs:complexType name="ArrayOfPointofContactBySubPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PointofContactBySubPayer" nillable="true" type="tns:PointofContactBySubPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPointofContactBySubPayer" nillable="true" type="tns:ArrayOfPointofContactBySubPayer" />
+  <xs:complexType name="PointofContactBySubPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BackOfficeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryCurrencies" nillable="true" type="tns:ArrayOfDeliveryCurrency" />
+      <xs:element minOccurs="0" name="DeliveryMethods" nillable="true" type="tns:ArrayOfDeliveryMethod" />
+      <xs:element minOccurs="0" name="POCAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POCDisplayFlag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POCId" type="xs:int" />
+      <xs:element minOccurs="0" name="POCName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POCPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POCStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PayerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RejectTransactionLimitsRules" nillable="true" type="tns:ArrayOfRejectTransactionLimitsRules" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="SubPayerName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PointofContactBySubPayer" nillable="true" type="tns:PointofContactBySubPayer" />
+  <xs:complexType name="ArrayOfDeliveryCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeliveryCurrency" nillable="true" type="tns:DeliveryCurrency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeliveryCurrency" nillable="true" type="tns:ArrayOfDeliveryCurrency" />
+  <xs:complexType name="DeliveryCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strDeliveryCurrency" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeliveryCurrency" nillable="true" type="tns:DeliveryCurrency" />
+  <xs:complexType name="ArrayOfRejectTransactionLimitsRules">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RejectTransactionLimitsRules" nillable="true" type="tns:RejectTransactionLimitsRules" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRejectTransactionLimitsRules" nillable="true" type="tns:ArrayOfRejectTransactionLimitsRules" />
+  <xs:complexType name="RejectTransactionLimitsRules">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LimitCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RejectAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RuleId" type="xs:int" />
+      <xs:element minOccurs="0" name="SendCurrency" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RejectTransactionLimitsRules" nillable="true" type="tns:RejectTransactionLimitsRules" />
+  <xs:complexType name="PayerCommissionList">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PayerCommissions" nillable="true" type="tns:ArrayOfPayerCommission" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayerCommissionList" nillable="true" type="tns:PayerCommissionList" />
+  <xs:complexType name="ArrayOfPayerCommission">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PayerCommission" nillable="true" type="tns:PayerCommission" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayerCommission" nillable="true" type="tns:ArrayOfPayerCommission" />
+  <xs:complexType name="PayerCommission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BackOfficeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DestinationCountryId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DestinationCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerFlatFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PayerPercentageFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayerPercentageFeeApplyOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendAmountRangeBegin" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendAmountRangeCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendAmountRangeEnd" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayerCommission" nillable="true" type="tns:PayerCommission" />
+  <xs:complexType name="ParamFxGivenPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DestinationCountryIDISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerID" type="xs:long" />
+      <xs:element minOccurs="0" name="RecipientCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SourceCountryIDISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamFxGivenPayer" nillable="true" type="tns:ParamFxGivenPayer" />
+  <xs:complexType name="FxGivenPayerList">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="FXGivenPayer" nillable="true" type="tns:ArrayOfFxGivenPayer" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FxGivenPayerList" nillable="true" type="tns:FxGivenPayerList" />
+  <xs:complexType name="ArrayOfFxGivenPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FxGivenPayer" nillable="true" type="tns:FxGivenPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFxGivenPayer" nillable="true" type="tns:ArrayOfFxGivenPayer" />
+  <xs:complexType name="FxGivenPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerID" type="xs:long" />
+      <xs:element minOccurs="0" name="PurchaseFXCurrency" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SellFXCurrency" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Spread" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SubPayerID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FxGivenPayer" nillable="true" type="tns:FxGivenPayer" />
+  <xs:complexType name="ParamFeeFXDataWithoutPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryOption" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendAmountCurrencyISOCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamFeeFXDataWithoutPayer" nillable="true" type="tns:ParamFeeFXDataWithoutPayer" />
+  <xs:complexType name="FeeFXDataWithoutPayerList">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element minOccurs="0" name="FeesFXDataWithoutPayer" nillable="true" type="tns:ArrayOfFeeFXDataWithoutPayer" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeeFXDataWithoutPayerList" nillable="true" type="tns:FeeFXDataWithoutPayerList" />
+  <xs:complexType name="ArrayOfFeeFXDataWithoutPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeeFXDataWithoutPayer" nillable="true" type="tns:FeeFXDataWithoutPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeeFXDataWithoutPayer" nillable="true" type="tns:ArrayOfFeeFXDataWithoutPayer" />
+  <xs:complexType name="FeeFXDataWithoutPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerFXMax" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CustomerFXMin" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CustomerFeeMax" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CustomerFeeMin" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeeFXDataWithoutPayer" nillable="true" type="tns:FeeFXDataWithoutPayer" />
+  <xs:complexType name="ParamFeeFxDataWithPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendAmountCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamFeeFxDataWithPayer" nillable="true" type="tns:ParamFeeFxDataWithPayer" />
+  <xs:complexType name="FeeFxDataWithPayerList">
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element minOccurs="0" name="FeesFxDataWithPayer" nillable="true" type="tns:ArrayOfFeeFxDataWithPayer" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeeFxDataWithPayerList" nillable="true" type="tns:FeeFxDataWithPayerList" />
+  <xs:complexType name="ArrayOfFeeFxDataWithPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeeFxDataWithPayer" nillable="true" type="tns:FeeFxDataWithPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeeFxDataWithPayer" nillable="true" type="tns:ArrayOfFeeFxDataWithPayer" />
+  <xs:complexType name="FeeFxDataWithPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayerCommission" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PayerCommissionCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PurchaseFX" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RecipientCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RetailFX" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SenderCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Spread" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeeFxDataWithPayer" nillable="true" type="tns:FeeFxDataWithPayer" />
+  <xs:complexType name="ParamProcessTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AgentCommission" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BankID" type="xs:int" />
+      <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComplianceAgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CpasId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HoldOrderFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="IDTRequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MTS_Receiver_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="MTS_Sender_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatingClientIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginatingStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="POCID" type="xs:int" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Perform_Cpas_Check" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Perform_List_Check" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PromotionAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PromotionLabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PurchaseFXRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PurposeofTransaction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceivingCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RecipientBankAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientRelationshiptoSender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RetailFXRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SendAmountCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SourceofFunds" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubpayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamProcessTransaction" nillable="true" type="tns:ParamProcessTransaction" />
+  <xs:complexType name="OutputParamProcessTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentCommission" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AgentId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComplianceAgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_DISABLED_POC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_DISBALED_Payer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_HQCommission" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EM_INVALID_POC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_INVALID_Payer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_INVALID_USERID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EM_PayerCommission" type="xs:decimal" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q7:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IDTRequestId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvRef" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderReceivedTimestamp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerCommission" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PurchaseRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RecipientIDDocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientRejectedReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderComplianceStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderId" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderRejectedReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SettlementAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SettlementCurrency" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamProcessTransaction" nillable="true" type="tns:OutputParamProcessTransaction" />
+  <xs:complexType name="OutputParamReleaseOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamReleaseOrder" nillable="true" type="tns:OutputParamReleaseOrder" />
+  <xs:complexType name="ParamContinueOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCity" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientExpiryDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientIDDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientIDDocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientId" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientIssueDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientNationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientState" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCity" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCity2" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCountry2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderExpiryDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderExpiryDate2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentNumber2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentType2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderId" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderIssueDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIssueDate2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderNationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderNationality2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderState" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderState2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamContinueOrder" nillable="true" type="tns:ParamContinueOrder" />
+  <xs:complexType name="OutputParamContinueOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q9:ArrayOfstring" />
+      <xs:element minOccurs="0" name="NewOrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamContinueOrder" nillable="true" type="tns:OutputParamContinueOrder" />
+  <xs:complexType name="OutputParamOrderStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentOrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastOrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusTimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamOrderStatus" nillable="true" type="tns:OutputParamOrderStatus" />
+  <xs:complexType name="OutputParamCancelOrderRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q10:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamCancelOrderRequest" nillable="true" type="tns:OutputParamCancelOrderRequest" />
+  <xs:complexType name="OutputParamOrderDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankBranchCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankID" type="xs:int" />
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerFee" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FXRatebasedonrecipientcurrency" type="xs:decimal" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderSubmitTimestamp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POCID" type="xs:int" />
+      <xs:element minOccurs="0" name="PayerId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PinNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiverEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiverTel1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceivingCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RecipientBankAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientBankAccountType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientBankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientCityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientId" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientMothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientStateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderAmountDue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SenderCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderStateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderTel1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendingAmountCurrencyISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SendingCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubpayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamOrderDetail" nillable="true" type="tns:OutputParamOrderDetail" />
+  <xs:complexType name="BankByPayerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Banks" nillable="true" type="tns:ArrayOfBankByPayer" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q11:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankByPayerList" nillable="true" type="tns:BankByPayerList" />
+  <xs:complexType name="ArrayOfBankByPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BankByPayer" nillable="true" type="tns:BankByPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBankByPayer" nillable="true" type="tns:ArrayOfBankByPayer" />
+  <xs:complexType name="BankByPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankID" type="xs:int" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerID" type="xs:long" />
+      <xs:element minOccurs="0" name="SubPayerID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankByPayer" nillable="true" type="tns:BankByPayer" />
+  <xs:complexType name="PayersByBankList">
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q12:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Payers" nillable="true" type="tns:ArrayOfPayersByBank" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayersByBankList" nillable="true" type="tns:PayersByBankList" />
+  <xs:complexType name="ArrayOfPayersByBank">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PayersByBank" nillable="true" type="tns:PayersByBank" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayersByBank" nillable="true" type="tns:ArrayOfPayersByBank" />
+  <xs:complexType name="PayersByBank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankId" type="xs:int" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="SubPayerId" nillable="true" type="tns:ArrayOfSubPayerId" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayersByBank" nillable="true" type="tns:PayersByBank" />
+  <xs:complexType name="ArrayOfSubPayerId">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubPayerId" nillable="true" type="tns:SubPayerId" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubPayerId" nillable="true" type="tns:ArrayOfSubPayerId" />
+  <xs:complexType name="SubPayerId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubPayerId" nillable="true" type="tns:SubPayerId" />
+  <xs:complexType name="BankByCountryList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Banks" nillable="true" type="tns:ArrayOfBankByCountry" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankByCountryList" nillable="true" type="tns:BankByCountryList" />
+  <xs:complexType name="ArrayOfBankByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BankByCountry" nillable="true" type="tns:BankByCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBankByCountry" nillable="true" type="tns:ArrayOfBankByCountry" />
+  <xs:complexType name="BankByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankID" type="xs:int" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerId" type="xs:long" />
+      <xs:element minOccurs="0" name="SubPayerId" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankByCountry" nillable="true" type="tns:BankByCountry" />
+  <xs:complexType name="ParamCreateSender">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderStateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStreetAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStreetAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamCreateSender" nillable="true" type="tns:ParamCreateSender" />
+  <xs:complexType name="OutputParamCreateSender">
+    <xs:sequence>
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q13:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MTS_Sender_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamCreateSender" nillable="true" type="tns:OutputParamCreateSender" />
+  <xs:complexType name="ParamUpdateSender">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MTS_Sender_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="MothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderStateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStreetAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStreetAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamUpdateSender" nillable="true" type="tns:ParamUpdateSender" />
+  <xs:complexType name="OutputParamUpdateSender">
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q14:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MTS_Sender_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamUpdateSender" nillable="true" type="tns:OutputParamUpdateSender" />
+  <xs:complexType name="ParamCreateRecipient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientCityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientStateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamCreateRecipient" nillable="true" type="tns:ParamCreateRecipient" />
+  <xs:complexType name="OutputParamCreateRecipient">
+    <xs:sequence>
+      <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q15:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MTS_Receiver_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamCreateRecipient" nillable="true" type="tns:OutputParamCreateRecipient" />
+  <xs:complexType name="ParamUpdateRecipient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MTS_Receiver_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="MothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientCityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientStateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStreetAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStreetAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamUpdateRecipient" nillable="true" type="tns:ParamUpdateRecipient" />
+  <xs:complexType name="OutputParamUpdateRecipient">
+    <xs:sequence>
+      <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q16:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MTS_Receiver_UID" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamUpdateRecipient" nillable="true" type="tns:OutputParamUpdateRecipient" />
+  <xs:complexType name="ParamSender">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderStreetAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderStreetAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamSender" nillable="true" type="tns:ParamSender" />
+  <xs:complexType name="ParamRecipient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MothersMaidenName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCityID" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientGender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientStateID" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamRecipient" nillable="true" type="tns:ParamRecipient" />
+  <xs:complexType name="CountryList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Countries" nillable="true" type="tns:ArrayOfCountry" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CountryList" nillable="true" type="tns:CountryList" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="StateByCountryList">
+    <xs:sequence>
+      <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q17:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="States" nillable="true" type="tns:ArrayOfStateByCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StateByCountryList" nillable="true" type="tns:StateByCountryList" />
+  <xs:complexType name="ArrayOfStateByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StateByCountry" nillable="true" type="tns:StateByCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStateByCountry" nillable="true" type="tns:ArrayOfStateByCountry" />
+  <xs:complexType name="StateByCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StateByCountry" nillable="true" type="tns:StateByCountry" />
+  <xs:complexType name="CityByStateList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cities" nillable="true" type="tns:ArrayOfCityByState" />
+      <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q18:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CityByStateList" nillable="true" type="tns:CityByStateList" />
+  <xs:complexType name="ArrayOfCityByState">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CityByState" nillable="true" type="tns:CityByState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCityByState" nillable="true" type="tns:ArrayOfCityByState" />
+  <xs:complexType name="CityByState">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityID" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateID" type="xs:int" />
+      <xs:element minOccurs="0" name="StateISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CityByState" nillable="true" type="tns:CityByState" />
+  <xs:complexType name="OutputParamCreateCPASId">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamCreateCPASId" nillable="true" type="tns:OutputParamCreateCPASId" />
+  <xs:complexType name="ParamSaveCustomerIdentification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCity" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientExpiryDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientIDDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientIDDocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientId" type="xs:int" />
+      <xs:element minOccurs="0" name="RecipientIssueDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientNationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientState" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCity" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCity2" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderCountry2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderExpiryDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderExpiryDate2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentNumber2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIDDocumentType2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderId" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderIssueDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIssueDate2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderNationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderNationality2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderState" type="xs:int" />
+      <xs:element minOccurs="0" name="SenderState2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamSaveCustomerIdentification" nillable="true" type="tns:ParamSaveCustomerIdentification" />
+  <xs:complexType name="OutputParamSaveCustomerIdentification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q19:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamSaveCustomerIdentification" nillable="true" type="tns:OutputParamSaveCustomerIdentification" />
+  <xs:complexType name="PromotionRuleList">
+    <xs:sequence>
+      <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q20:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PromotionRules" nillable="true" type="tns:ArrayOfPromotionRule" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PromotionRuleList" nillable="true" type="tns:PromotionRuleList" />
+  <xs:complexType name="ArrayOfPromotionRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PromotionRule" nillable="true" type="tns:PromotionRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPromotionRule" nillable="true" type="tns:ArrayOfPromotionRule" />
+  <xs:complexType name="PromotionRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DestinationCountryISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IncludedAgentList" nillable="true" type="q21:ArrayOfstring" />
+      <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerID" type="xs:int" />
+      <xs:element minOccurs="0" name="PromotionLabel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PromotionType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RangeBegin" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RangeEnd" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SourceCountryISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SubPayerID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PromotionRule" nillable="true" type="tns:PromotionRule" />
+  <xs:complexType name="ParamTransactionNote">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CPASID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisibleToAgent" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamTransactionNote" nillable="true" type="tns:ParamTransactionNote" />
+  <xs:complexType name="OutputParamTransactionNote">
+    <xs:sequence>
+      <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q22:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TransactionNoteID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamTransactionNote" nillable="true" type="tns:OutputParamTransactionNote" />
+  <xs:complexType name="GetTransactionNotesList">
+    <xs:sequence>
+      <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q23:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ListTransactionNotes" nillable="true" type="tns:ArrayOfGetTransactionNotes" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetTransactionNotesList" nillable="true" type="tns:GetTransactionNotesList" />
+  <xs:complexType name="ArrayOfGetTransactionNotes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GetTransactionNotes" nillable="true" type="tns:GetTransactionNotes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGetTransactionNotes" nillable="true" type="tns:ArrayOfGetTransactionNotes" />
+  <xs:complexType name="GetTransactionNotes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoteDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NoteType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetTransactionNotes" nillable="true" type="tns:GetTransactionNotes" />
+  <xs:complexType name="ParamMigrateAgent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMigrated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MigratedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MigratedDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamMigrateAgent" nillable="true" type="tns:ParamMigrateAgent" />
+  <xs:complexType name="OutputParamMigrateAgent">
+    <xs:sequence>
+      <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q24:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputParamMigrateAgent" nillable="true" type="tns:OutputParamMigrateAgent" />
+  <xs:complexType name="ParamValidateMFSAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamValidateMFSAccount" nillable="true" type="tns:ParamValidateMFSAccount" />
+  <xs:complexType name="OutputValidateMFSAccount">
+    <xs:sequence>
+      <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q25:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputValidateMFSAccount" nillable="true" type="tns:OutputValidateMFSAccount" />
+  <xs:complexType name="ParamValidateMFSBankAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Msisdn" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamValidateMFSBankAccount" nillable="true" type="tns:ParamValidateMFSBankAccount" />
+  <xs:complexType name="OutputValidateMFSBankAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountHolderName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q26:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputValidateMFSBankAccount" nillable="true" type="tns:OutputValidateMFSBankAccount" />
+  <xs:complexType name="ParamValidateTransferToAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Msisdn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamValidateTransferToAccount" nillable="true" type="tns:ParamValidateTransferToAccount" />
+  <xs:complexType name="OutputValidateTransferToAccount">
+    <xs:sequence>
+      <xs:element xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q27:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputValidateTransferToAccount" nillable="true" type="tns:OutputValidateTransferToAccount" />
+  <xs:complexType name="ParamValidateBitPesaAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamValidateBitPesaAccount" nillable="true" type="tns:ParamValidateBitPesaAccount" />
+  <xs:complexType name="OutputValidateBitPesaAccount">
+    <xs:sequence>
+      <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q28:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputValidateBitPesaAccount" nillable="true" type="tns:OutputValidateBitPesaAccount" />
+  <xs:complexType name="PayerRoundingRulesList">
+    <xs:sequence>
+      <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q29:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PayerRoundingRules" nillable="true" type="tns:ArrayOfPayerRoundingRules" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayerRoundingRulesList" nillable="true" type="tns:PayerRoundingRulesList" />
+  <xs:complexType name="ArrayOfPayerRoundingRules">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PayerRoundingRules" nillable="true" type="tns:PayerRoundingRules" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayerRoundingRules" nillable="true" type="tns:ArrayOfPayerRoundingRules" />
+  <xs:complexType name="PayerRoundingRules">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:int" />
+      <xs:element minOccurs="0" name="DeliveryMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DestinationCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnglishMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PayerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecipientCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoundingMultiple" type="xs:int" />
+      <xs:element minOccurs="0" name="SourceCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpanishMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PayerRoundingRules" nillable="true" type="tns:PayerRoundingRules" />
+  <xs:complexType name="OutputUpdateHoldStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPASId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q30:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputUpdateHoldStatus" nillable="true" type="tns:OutputUpdateHoldStatus" />
+  <xs:complexType name="NotesByAgentList">
+    <xs:sequence>
+      <xs:element xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q31:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Notes" nillable="true" type="tns:ArrayOfNotesByAgent" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotesByAgentList" nillable="true" type="tns:NotesByAgentList" />
+  <xs:complexType name="ArrayOfNotesByAgent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NotesByAgent" nillable="true" type="tns:NotesByAgent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNotesByAgent" nillable="true" type="tns:ArrayOfNotesByAgent" />
+  <xs:complexType name="NotesByAgent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuthorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfNote" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WireNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NotesByAgent" nillable="true" type="tns:NotesByAgent" />
+  <xs:complexType name="ParamVTNBankAccountValidation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankAccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParamVTNBankAccountValidation" nillable="true" type="tns:ParamVTNBankAccountValidation" />
+  <xs:complexType name="OutputVTNBankAccountValidation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankAccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankVerificationNumber" nillable="true" type="xs:string" />
+      <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q32:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputVTNBankAccountValidation" nillable="true" type="tns:OutputVTNBankAccountValidation" />
+  <xs:complexType name="CancellationReasonsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ListCancellationReasons" nillable="true" type="tns:ArrayOfCancellationReasons" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CancellationReasonsList" nillable="true" type="tns:CancellationReasonsList" />
+  <xs:complexType name="ArrayOfCancellationReasons">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CancellationReasons" nillable="true" type="tns:CancellationReasons" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCancellationReasons" nillable="true" type="tns:ArrayOfCancellationReasons" />
+  <xs:complexType name="CancellationReasons">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReasonID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CancellationReasons" nillable="true" type="tns:CancellationReasons" />
+  <xs:complexType name="BancoAccountValidation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PayAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayAccountType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BancoAccountValidation" nillable="true" type="tns:BancoAccountValidation" />
+  <xs:complexType name="OutputBancoAccountValidation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateTimeStamp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q33:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PayAccountHolderName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutputBancoAccountValidation" nillable="true" type="tns:OutputBancoAccountValidation" />
+  <xs:complexType name="BankBranchCodeByPayerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Branches" nillable="true" type="tns:ArrayOfBankBranchCodeByPayer" />
+      <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ErrorMessage" nillable="true" type="q34:ArrayOfstring" />
+      <xs:element minOccurs="0" name="ResultCode" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankBranchCodeByPayerList" nillable="true" type="tns:BankBranchCodeByPayerList" />
+  <xs:complexType name="ArrayOfBankBranchCodeByPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BankBranchCodeByPayer" nillable="true" type="tns:BankBranchCodeByPayer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBankBranchCodeByPayer" nillable="true" type="tns:ArrayOfBankBranchCodeByPayer" />
+  <xs:complexType name="BankBranchCodeByPayer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryISOCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssuerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MTSBankID" type="xs:int" />
+      <xs:element minOccurs="0" name="PayerBankCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayerID" type="xs:int" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoutingNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubPayerID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankBranchCodeByPayer" nillable="true" type="tns:BankBranchCodeByPayer" />
+</xs:schema>

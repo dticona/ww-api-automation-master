@@ -1,0 +1,122 @@
+{
+  "uuid": "9bfbd4f8-71fb-4d32-bbe8-44fe5736d972-tr-0-1109",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount.CheckValidateTransferToAccountResponseResultWhenSubPayerIdIsNotListedForMobileWallet",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount.CheckValidateTransferToAccountResponseResultWhenSubPayerIdIsNotListedForMobileWallet",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateTransferToAccountResponseResultWhenSubPayerIdIsNotListedForMobileWallet"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateTransferToAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-4630"
+    },
+    {
+      "name": "tag",
+      "value": "C24253304"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateTransferToAccountResponseResultWhenSubPayerIdIsNotListedForMobileWallet",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that a Result Code 6 = Invalid SubPayerID is displayed in API method 'ValidateTransferToAccount()' response when Subpayer is not listed for Mobile Wallet in WWC Database\n",
+  "steps": [
+    {
+      "name": "CheckValidateTransferToAccountResponseResultWhenSubPayerIdIsNotListedForMobileWallet",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ValidateTransferToAccount()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateTransferToAccount'",
+              "source": "7b331a3f0b154631b0ee0791f146ae48-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateTransferToAccount'",
+              "source": "b84063a0730a419a9f22f358f14c9db8-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215159310,
+          "stop": 1596215159603
+        },
+        {
+          "name": "2 - Check response for method `ValidateTransferToAccount()` have correct error messages and result code'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215159604,
+          "stop": 1596215159604
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e7ff41abde90414298bf58421dfe1b11-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215159309,
+      "stop": 1596215160058
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215159309,
+  "stop": 1596215160058
+}

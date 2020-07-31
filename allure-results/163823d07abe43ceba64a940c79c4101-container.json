@@ -1,0 +1,61 @@
+{
+  "uuid": "836fe66f-08e7-4d6d-8a3f-e8f22a35fe7d-tc-0-1069",
+  "name": "WhiteWingsApi.Tests.CheckMethodGetPointOfContactListBySubPayer.CheckErrorMessageInGetPointOfContactListBySubPayerResponse",
+  "children": [
+    "e02087f9-4d54-4015-9c50-065fcf4b8cc7-tr-0-1070"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215072462,
+      "stop": 1596215072462
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215072462,
+      "stop": 1596215072462
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215072462,
+      "stop": 1596215072462
+    }
+  ],
+  "links": [],
+  "start": 1596215071686,
+  "stop": 1596215072464
+}

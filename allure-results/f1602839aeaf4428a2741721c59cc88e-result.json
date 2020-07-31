@@ -1,0 +1,122 @@
+{
+  "uuid": "d54e1594-d0d4-44cf-9dbd-0ce0bbf7e498-tr-0-1055",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank.CheckErrorWhenGetPayersByBankResponseUsingEmptyBankNameField",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank.CheckErrorWhenGetPayersByBankResponseUsingEmptyBankNameField",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayersByBankResponseUsingEmptyBankNameField"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4597"
+    },
+    {
+      "name": "tag",
+      "value": "C28998071"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayersByBankResponseUsingEmptyBankNameField",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetPayersByBank() when BankName field is Empty\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayersByBankResponseUsingEmptyBankNameField",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayersByBank()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayersByBank'",
+              "source": "bcbac76c48a149ea8c44e5af01e187b9-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayersByBank'",
+              "source": "722313f152584fb39032db3acdd130de-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215069324,
+          "stop": 1596215069626
+        },
+        {
+          "name": "2 - The response should display following error message: Bank Name is required.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215069626,
+          "stop": 1596215069626
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dd44a8ddc5484d82b2185c4b06f25375-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215069324,
+      "stop": 1596215070085
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215069324,
+  "stop": 1596215070085
+}

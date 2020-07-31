@@ -1,0 +1,132 @@
+{
+  "uuid": "4c6cc27d-1367-4465-89de-53249db71f27-tr-0-1067",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckCancelOrderRequestHasInvalidUserId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckCancelOrderRequestHasInvalidUserId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCancelOrderRequestHasInvalidUserId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4553"
+    },
+    {
+      "name": "tag",
+      "value": "C28699781"
+    }
+  ],
+  "links": [],
+  "name": "CheckCancelOrderRequestHasInvalidUserId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in CancelOrderRequest method when UserID field is Invalid\n",
+  "steps": [
+    {
+      "name": "CheckCancelOrderRequestHasInvalidUserId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `CancelOrderRequest()` on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "d510b4126b1d41b3854f9dccfcb4ffec-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "403be656c4364432a3513e9996715552-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "b6bebeb2914449708016a70c6975e1cd-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "9bd78f8329d34905a50c68c35a45b7f3-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215018742,
+          "stop": 1596215019473
+        },
+        {
+          "name": "2 - Check 'Invalid UserID' Error message is returned",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215019473,
+          "stop": 1596215019474
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c668871f5b0d443cbfcd6a1932090703-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215018741,
+      "stop": 1596215020006
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215018741,
+  "stop": 1596215020007
+}

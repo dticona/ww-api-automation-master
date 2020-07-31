@@ -1,0 +1,76 @@
+{
+  "uuid": "14bd93bb-b4e7-47f4-bf81-96b96e63fa9d-tc-0-1047",
+  "name": "WhiteWingsApi.Tests.CheckMethodCreateRecipient.CheckItIsPossibleCreateNewRecipient",
+  "children": [
+    "aca43c2b-883b-4cb5-8e4e-602e9b1fac7c-tr-0-1048"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215024703,
+      "stop": 1596215024703
+    },
+    {
+      "name": "PrepareDataToRunCreateRecipient",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215024703,
+      "stop": 1596215024703
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215024703,
+      "stop": 1596215024703
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215024703,
+      "stop": 1596215024703
+    }
+  ],
+  "links": [],
+  "start": 1596215023893,
+  "stop": 1596215024705
+}

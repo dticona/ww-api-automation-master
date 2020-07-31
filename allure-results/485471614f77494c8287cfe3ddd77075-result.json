@@ -1,0 +1,153 @@
+{
+  "uuid": "20ab092e-1aac-41e8-bc26-a76484eb1165-tr-0-1078",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes.CheckGetTransactionNotesHasNoteDatails",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes.CheckGetTransactionNotesHasNoteDatails",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetTransactionNotesHasNoteDatails"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4407"
+    },
+    {
+      "name": "tag",
+      "value": "C19694581"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetTransactionNotesHasNoteDatails",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that GetTransactionNotes() method response shows Details of Notes\n",
+  "steps": [
+    {
+      "name": "CheckGetTransactionNotesHasNoteDatails",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request using SetTransactionNote() with the following values",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/SetTransactionNote'",
+              "source": "7a9ae0d8a29042378524ae0d6bc0d313-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/SetTransactionNote'",
+              "source": "16eee0b340f14daeba37e9ea48b2364f-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215094836,
+          "stop": 1596215095142
+        },
+        {
+          "name": "2. Make a request to GetTransaction Notes and verify if the noted is returned on the response",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetTransactionNotes'",
+              "source": "7be11ae792e14d0fa5ebf44bc8a984ef-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetTransactionNotes'",
+              "source": "557b0c032e54417491efb18d5122f53a-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215095142,
+          "stop": 1596215095454
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "9ef68400a69a4c3e94ecb273d51aed4c-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "737bf6db69d4470cbc766a14b2b8f791-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+          "source": "b47bb10d22824ba48cc359e4d9544de6-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+          "source": "cbefe7a641064f6a8cdc2be9abd3c747-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "9e8007f89dcc4f91a52406c677247f83-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215093896,
+      "stop": 1596215095913
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215093896,
+  "stop": 1596215095913
+}

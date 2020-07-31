@@ -1,0 +1,76 @@
+{
+  "uuid": "547b0a69-3cf5-4723-b966-93c45f639863-tc-0-1009",
+  "name": "WhiteWingsApi.Tests.CheckMethodGetFeesFXDataWithoutPayer.CheckResponseGetFeesFXDataWithoutPayerHasErrorWhenAgentIdFieldIsInvalid",
+  "children": [
+    "5ad5daa0-b3dd-4c9a-baaf-bd3f14fbedf6-tr-0-1013"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215037549,
+      "stop": 1596215037549
+    },
+    {
+      "name": "PrepareDataToRunCreateRecipient",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215037549,
+      "stop": 1596215037549
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215037549,
+      "stop": 1596215037549
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215037549,
+      "stop": 1596215037549
+    }
+  ],
+  "links": [],
+  "start": 1596215036696,
+  "stop": 1596215037550
+}

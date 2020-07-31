@@ -1,0 +1,122 @@
+{
+  "uuid": "eb8c111c-413f-453d-b40a-0b31ecf536d0-tr-0-1124",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountStanbicIbtcBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountStanbicIbtcBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountStanbicIbtcBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4434"
+    },
+    {
+      "name": "tag",
+      "value": "C64889590"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountStanbicIbtcBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for STANBIC IBTC BANK PLC\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountStanbicIbtcBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Fidelity Bank",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "2bda1514ee854c26bf20972142e348af-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "4cb72c35ce0145d4a497c8fa58c4b80a-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215137516,
+          "stop": 1596215139547
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner KAFAYAT ORIADE MUSTAPHA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215139547,
+          "stop": 1596215139548
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b825a8053d73438b95b12990856e3046-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215137507,
+      "stop": 1596215140000
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215137507,
+  "stop": 1596215140000
+}

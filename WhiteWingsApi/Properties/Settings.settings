@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WhiteWingsApi.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WhiteWingsApi_com_bossrevmts_qa_WWCDTC" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://qa.bossrevmts.com:8088/WWCDTC.svc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

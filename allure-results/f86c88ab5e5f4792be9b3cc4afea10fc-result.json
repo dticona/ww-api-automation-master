@@ -1,0 +1,132 @@
+{
+  "uuid": "277e2b23-bec0-46be-a6bd-ab0b4edb8028-tr-0-1096",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidComplianceAgentId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidComplianceAgentId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageProcessTransactionWithInvalidComplianceAgentId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4605"
+    },
+    {
+      "name": "tag",
+      "value": "C17160072"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageProcessTransactionWithInvalidComplianceAgentId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Get ProcessTransaction () using an invalid 'ComplianceAgentID'.\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageProcessTransactionWithInvalidComplianceAgentId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "fca1a2545c5c4d38a0d5a4de699010b0-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "7eaad4a1f1d94e16b0e7a8468ce78e00-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215075192,
+          "stop": 1596215075490
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Compliance Agent ID' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215075490,
+          "stop": 1596215075491
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "90cff212c38d44f0aebb3cb67af06dd8-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "f9f389c2ddf34181b711f9b00a53d6f6-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "2983236bfb8c41acb1f9dd5f6e5d17d1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215074882,
+      "stop": 1596215075952
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215074882,
+  "stop": 1596215075952
+}

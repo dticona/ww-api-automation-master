@@ -1,0 +1,132 @@
+{
+  "uuid": "485d021b-2f34-4022-9612-651a20d250c6-tr-0-1100",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidPayerId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckErrorMessageProcessTransactionWithInvalidPayerId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorMessageProcessTransactionWithInvalidPayerId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-3948"
+    },
+    {
+      "name": "tag",
+      "value": "C17153355"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorMessageProcessTransactionWithInvalidPayerId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": " Verify that processing a transaction using an 'invalid Payer ID' an error message is displayed\n",
+  "steps": [
+    {
+      "name": "CheckErrorMessageProcessTransactionWithInvalidPayerId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `ProcessTransaction()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "c59f238b7d5c43afbfdfd78f4e049b98-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "64c0eb41747e4daf92262f0dccf87bc7-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215076266,
+          "stop": 1596215076744
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Payer Id.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215076744,
+          "stop": 1596215076744
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "1ef432f7d1304ed5b96814ce80adef58-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "700154a013cf4e929f8c73ac6aed901d-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "c4ad676698be40c085fb00c542662292-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215075956,
+      "stop": 1596215077226
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215075956,
+  "stop": 1596215077226
+}

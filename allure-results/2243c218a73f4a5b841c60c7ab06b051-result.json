@@ -1,0 +1,122 @@
+{
+  "uuid": "64a8d97b-f3b0-43ea-829f-dd9c5482ea57-tr-0-1117",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountUnionBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountUnionBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountUnionBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4436"
+    },
+    {
+      "name": "tag",
+      "value": "C64889591"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountUnionBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for Union Bank Of Nigeria Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountUnionBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Union Bank Of Nigeria Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "34566d88009e43b89c4154a42c96295e-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "fc22c8041be44c2a83ea5e4906c85dcb-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215142473,
+          "stop": 1596215143982
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner FADIPE SUNDAY JAMES",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215143982,
+          "stop": 1596215143982
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7b30b540c72f4fd8813b024731628f7e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215142464,
+      "stop": 1596215144452
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215142464,
+  "stop": 1596215144452
+}

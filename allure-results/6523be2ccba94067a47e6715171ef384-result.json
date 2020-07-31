@@ -1,0 +1,122 @@
+{
+  "uuid": "46c82789-fbe4-4a92-ab10-a818a15f0905-tr-0-1135",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationEcobankNigeriaPlc",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationEcobankNigeriaPlc",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationEcobankNigeriaPlc"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4457"
+    },
+    {
+      "name": "tag",
+      "value": "C65081170"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationEcobankNigeriaPlc",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response return the name of the account owner for Ecobank Nigeria Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationEcobankNigeriaPlc",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Ecobank Nigeria Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "3bf8ae0da60e4bb9a14f2d63370d4e27-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "de5dbfdeacab4b4ba7db29ac6a288138-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215166299,
+          "stop": 1596215168795
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  MOEMEKE LUCKY VICTOR",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215168795,
+          "stop": 1596215168795
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "746c39a7afb44dcd85c061e10661ce19-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215166290,
+      "stop": 1596215169264
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215166290,
+  "stop": 1596215169264
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "9a1fc7dc-7cc6-4a19-aa99-e30a71f48e93-tr-0-1115",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountDiamontBankPlc",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountDiamontBankPlc",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountDiamontBankPlc"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4431"
+    },
+    {
+      "name": "tag",
+      "value": "C64889588"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountDiamontBankPlc",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for Diamond Bank Plc - Nigeria \n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountDiamontBankPlc",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for DiamontBank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "987026f9143f479493ee2f8a3c245994-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "a62e36f8c2d14097acc4fbb5cddc9906-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215119579,
+          "stop": 1596215121376
+        },
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for IHEAKA CHRISTIANA CHIKEZIE",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215121376,
+          "stop": 1596215121376
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9aff66605ae446b6a3c33c079e937fd1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215119570,
+      "stop": 1596215121843
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215119570,
+  "stop": 1596215121843
+}

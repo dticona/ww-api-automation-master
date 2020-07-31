@@ -1,0 +1,122 @@
+{
+  "uuid": "42283a34-ab28-4db5-8f53-1e045a4e42a2-tr-0-1141",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationSterlingBankPlcNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationSterlingBankPlcNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationSterlingBankPlcNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4451"
+    },
+    {
+      "name": "tag",
+      "value": "C65070315"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationSterlingBankPlcNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for Sterling Bank Plc Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationSterlingBankPlcNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for SterlingBankPlcNigeria",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "753c76bdf7d34590af709fcc6eeff995-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "bfcff7996caf418d9ad5680fcb1c536b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215185732,
+          "stop": 1596215189365
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  EFELUDU OMOVUDU ANTHONY",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215189365,
+          "stop": 1596215189365
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "baac3d0fcb77452faa347d8394c3530a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215185722,
+      "stop": 1596215189816
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215185722,
+  "stop": 1596215189816
+}

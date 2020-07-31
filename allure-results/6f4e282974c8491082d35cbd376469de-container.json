@@ -1,0 +1,76 @@
+{
+  "uuid": "b7c516cf-052a-470a-ad2f-53a3a7171302-tc-0-1071",
+  "name": "WhiteWingsApi.Tests.CheckMethodReleaseOrder.CheckReleaseOrderWithComplianceHoldStatus",
+  "children": [
+    "32d90ab5-64f8-49e9-af8e-987f9deae63c-tr-0-1072"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215090390,
+      "stop": 1596215090390
+    },
+    {
+      "name": "CreateNewCpasIdAndPrepareDataToProcessTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215090390,
+      "stop": 1596215090390
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215090390,
+      "stop": 1596215090390
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215090390,
+      "stop": 1596215090390
+    }
+  ],
+  "links": [],
+  "start": 1596215088653,
+  "stop": 1596215090393
+}

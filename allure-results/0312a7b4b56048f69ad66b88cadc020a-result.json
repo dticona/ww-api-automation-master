@@ -1,0 +1,132 @@
+{
+  "uuid": "d43f69ab-9543-4de0-bc56-0f1d125cf4de-tr-0-1102",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckProcessTransactionWithInvalidPaymentMehod",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodProcessTransaction.CheckProcessTransactionWithInvalidPaymentMehod",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckProcessTransactionWithInvalidPaymentMehod"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodProcessTransaction"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-3920"
+    },
+    {
+      "name": "tag",
+      "value": "C17153354"
+    }
+  ],
+  "links": [],
+  "name": "CheckProcessTransactionWithInvalidPaymentMehod",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that processing a transaction using an 'Invalid Payment Method' a error message is returned on the response\n",
+  "steps": [
+    {
+      "name": "CheckProcessTransactionWithInvalidPaymentMehod",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the ProcessTransaction() request using an Invalid Mode of payment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "6e04c0e882ee4d74b2fa6f252e71814f-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "1d061258a40f4da39d145ceeea88c2bd-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215085456,
+          "stop": 1596215086019
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Payment Type' error",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215086019,
+          "stop": 1596215086019
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "c54947ba81b14767bffa9ecf4221f49f-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "b1ec8c17c09b4d6682cd574d6fec2db4-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "288e1f099ac64165a22efc270cfb53dd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215085133,
+      "stop": 1596215086488
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215085133,
+  "stop": 1596215086488
+}

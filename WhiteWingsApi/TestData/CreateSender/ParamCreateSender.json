@@ -1,0 +1,18 @@
+﻿{
+	"AgentID": "PRODTEST717",
+	"DOB": "10-10-1990", 
+	"Email": "superlans80@gmail.com",
+	"Nationality": "BOL",
+	"Phone1": "79748420",
+	"SenderCityID": "290341",
+	"SenderCityName": "LUKE A F B",
+	"SenderCountry": "USA",
+	"SenderFirstName": "Sergio",
+	"SenderLastName": "Gomez",
+	"SenderOccupation": "Tester",
+	"SenderStateID": "4320",
+	"SenderStateName": "ALABAMA",
+	"SenderStreetAddress1": "Street 123",
+	"UserID": "jaitkenag",
+	"ZipCode": "12345"
+}

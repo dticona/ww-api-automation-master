@@ -1,0 +1,137 @@
+{
+  "uuid": "af9ad7a7-f19f-49ce-8a13-9cff492b4aac-tr-0-1148",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetCountryList.CheckPossibilityToGetCountryList",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetCountryList.CheckPossibilityToGetCountryList",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetCountryList"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckPossibilityToGetCountryList"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetCountryList"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4558"
+    },
+    {
+      "name": "tag",
+      "value": "C24681196"
+    }
+  ],
+  "links": [],
+  "name": "CheckPossibilityToGetCountryList",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if it is possible get list of countries by GetCountryList() method.\n",
+  "steps": [
+    {
+      "name": "CheckPossibilityToGetCountryList",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetCountryList()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetCountryList'",
+              "source": "6fd7f97882094775a74366acb8363f3f-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetCountryList'",
+              "source": "3fae879b2f05485d92241cdbcd2b213c-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215027821,
+          "stop": 1596215028133
+        },
+        {
+          "name": "2 - Check response has result code = 0",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215028133,
+          "stop": 1596215028133
+        },
+        {
+          "name": "3 - Check response shows the list of Countries",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215028133,
+          "stop": 1596215028133
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dbe1859b2d2f424db3b8a9496643ceb5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215027821,
+      "stop": 1596215028600
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215027821,
+  "stop": 1596215028600
+}

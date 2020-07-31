@@ -1,0 +1,122 @@
+{
+  "uuid": "55e4006d-7aa7-40a3-a75a-63bcec7442f8-tr-0-1121",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountAccessBankNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountAccessBankNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountAccessBankNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4443"
+    },
+    {
+      "name": "tag",
+      "value": "C64889587"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountAccessBankNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for Access Bank Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountAccessBankNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Access Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "a2debfd13d7c4baeb88e13b522aa385d-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "95a08820f1a74c5ca60a3613966972b2-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215116191,
+          "stop": 1596215119105
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner VERONICA ASHAKA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215119105,
+          "stop": 1596215119105
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b026c4367b4949509a0c77bb3661bec3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215116179,
+      "stop": 1596215119567
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215116179,
+  "stop": 1596215119567
+}

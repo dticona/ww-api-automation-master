@@ -1,0 +1,122 @@
+{
+  "uuid": "3991c06f-017c-4556-8995-647bf9c35234-tr-0-1034",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidPayerIDField",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidPayerIDField",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidPayerIDField"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4534"
+    },
+    {
+      "name": "tag",
+      "value": "C19355906"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidPayerIDField",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify that the GetPayerRoundingRules () does not display the 'Round Receiving Amount Nearest Multiple' rules if the PayerID is invalid.\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidPayerIDField",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerRoundingRules()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "5d285906af384f1fab3ef68829481c0b-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "bcffbe2afb2240f595945578a3028cda-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215066998,
+          "stop": 1596215067294
+        },
+        {
+          "name": "2 - The response should display following error message: Invalid payer ID.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215067294,
+          "stop": 1596215067294
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8ae0fa03e8674f6daa67a587c91844ef-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215066997,
+      "stop": 1596215067748
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215066997,
+  "stop": 1596215067749
+}

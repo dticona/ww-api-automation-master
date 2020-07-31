@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://qa.bossrevmts.com:8088/WWCDTC.svc?wsdl" filename="WWCDTC.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://qa.bossrevmts.com:8088/WWCDTC.svc?disco" filename="WWCDTC.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd0" filename="WWCDTC.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd1" filename="WWCDTC0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd2" filename="WWCDTC1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd3" filename="WWCDTC2.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

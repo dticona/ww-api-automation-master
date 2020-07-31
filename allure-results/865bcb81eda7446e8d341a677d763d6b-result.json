@@ -1,0 +1,122 @@
+{
+  "uuid": "2050bc94-c330-4795-b2cd-46a0128f7c6e-tr-0-1126",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountSterlingBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountSterlingBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountSterlingBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4435"
+    },
+    {
+      "name": "tag",
+      "value": "C64889597"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountSterlingBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for Sterling Bank Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountSterlingBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for  Sterling Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "29f80ce5e5c24fe5970f36226f840705-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "b609c667e1924cf19a11093859f17ffa-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215140011,
+          "stop": 1596215142005
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner EFELUDU OMOVUDU ANTHONY",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215142005,
+          "stop": 1596215142006
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "73914e24c0bb4d17967150f446bc1f27-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215140002,
+      "stop": 1596215142462
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215140002,
+  "stop": 1596215142462
+}

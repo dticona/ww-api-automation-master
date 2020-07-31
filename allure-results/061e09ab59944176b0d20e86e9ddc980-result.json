@@ -1,0 +1,122 @@
+{
+  "uuid": "6672c9f7-45e6-49be-af18-a2288a3ccc76-tr-0-1041",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission.CheckErrorWhenGetPayerCommissionResponseWithCountryIdMoreThanThreeCharacters",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission.CheckErrorWhenGetPayerCommissionResponseWithCountryIdMoreThanThreeCharacters",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayerCommissionResponseWithCountryIdMoreThanThreeCharacters"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerCommission"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4587"
+    },
+    {
+      "name": "tag",
+      "value": "C28993109"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayerCommissionResponseWithCountryIdMoreThanThreeCharacters",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetPayerCommission() when CountryId contain more than 3 characters\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayerCommissionResponseWithCountryIdMoreThanThreeCharacters",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerCommission()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerCommission'",
+              "source": "cf752cb59f0d4862bfd1c040bf44b506-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerCommission'",
+              "source": "98e35d5430e9466a9f961dc3b0ba0413-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215058684,
+          "stop": 1596215058986
+        },
+        {
+          "name": "2 - The response should display following error message: Country id must be three character only.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215058986,
+          "stop": 1596215058987
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "905e739b5bd84e69a89570f5ca104fd3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215058683,
+      "stop": 1596215059438
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215058683,
+  "stop": 1596215059438
+}

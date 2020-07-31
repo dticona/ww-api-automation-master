@@ -1,0 +1,122 @@
+{
+  "uuid": "db91dcea-3fe8-4948-8acb-f121e1ab5b8d-tr-0-1057",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry.CheckGetPayerListByCountryResponseShowsPayersByCountry",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry.CheckGetPayerListByCountryResponseShowsPayersByCountry",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetPayerListByCountryResponseShowsPayersByCountry"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerListByCountry"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4590"
+    },
+    {
+      "name": "tag",
+      "value": "C28995927"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetPayerListByCountryResponseShowsPayersByCountry",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if GetPayerListByCountry() response shows Payers by Country\n",
+  "steps": [
+    {
+      "name": "CheckGetPayerListByCountryResponseShowsPayersByCountry",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerListByCountry()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerListByCountry'",
+              "source": "7c06d9d296a74a80b6ecd42f428dd667-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerListByCountry'",
+              "source": "35db38b5b8cc4227bbfb9003ea07c0e9-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215062509,
+          "stop": 1596215063026
+        },
+        {
+          "name": "2 - Check response shows Payers by Country",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215063026,
+          "stop": 1596215063026
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ca7cee86ff914aca8b1c9479080bab05-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215062508,
+      "stop": 1596215063949
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215062508,
+  "stop": 1596215063949
+}

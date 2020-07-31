@@ -1,0 +1,122 @@
+{
+  "uuid": "0a268434-30c5-4735-af4d-0da8f800814e-tr-0-1090",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckUpdateHoldStatusResponseShowsResultCodeWhenCpasFieldIsEmpty",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus.CheckUpdateHoldStatusResponseShowsResultCodeWhenCpasFieldIsEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckUpdateHoldStatusResponseShowsResultCodeWhenCpasFieldIsEmpty"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodUpdateHoldStatus"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4620"
+    },
+    {
+      "name": "tag",
+      "value": "C23701051"
+    }
+  ],
+  "links": [],
+  "name": "CheckUpdateHoldStatusResponseShowsResultCodeWhenCpasFieldIsEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if 'UpdateHoldStatus()' method response shows Result Code = 4 when a CpasId field is Empty\n",
+  "steps": [
+    {
+      "name": "CheckUpdateHoldStatusResponseShowsResultCodeWhenCpasFieldIsEmpty",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `UpdateHoldStatus()` request on the soap API with empty CpasId",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "89d36d3b75ad4a9bb7509ee78b3d82c4-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/UpdateHoldStatus'",
+              "source": "f838c2419a2247fd8109f2f655e17f8a-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215115402,
+          "stop": 1596215115712
+        },
+        {
+          "name": "2 - Check that response has Result Code=4 and 'CPAS ID is required.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215115712,
+          "stop": 1596215115713
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "838dff0ec033434c977369a11d7b0d2e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215115402,
+      "stop": 1596215116177
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215115402,
+  "stop": 1596215116177
+}

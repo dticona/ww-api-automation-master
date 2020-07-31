@@ -1,0 +1,122 @@
+{
+  "uuid": "25081673-1266-4ed1-b1b1-7f49297a8945-tr-0-1140",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationUnityBankPlcNigeria",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationUnityBankPlcNigeria",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationUnityBankPlcNigeria"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4452"
+    },
+    {
+      "name": "tag",
+      "value": "C65070316"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationUnityBankPlcNigeria",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for Unity Bank Plc Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationUnityBankPlcNigeria",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Unity Bank Plc Nigeria",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "bd17059adff54ea8bc8f72484426bfe3-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "7f1e1c19080a47ada4565de0ece22989-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215196740,
+          "stop": 1596215199128
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  EMMANUEL OGBU",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215199128,
+          "stop": 1596215199129
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "68ed5f77eab046ad8e904384c5245505-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215196729,
+      "stop": 1596215199592
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215196729,
+  "stop": 1596215199592
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "5a843f9a-2ba6-4b97-b720-7ae16a10ebda-tr-0-1002",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFxDataWithPayerHasErrorWhenDeliveryMethodFieldIsEmpty",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFxDataWithPayerHasErrorWhenDeliveryMethodFieldIsEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeeFxDataWithPayerHasErrorWhenDeliveryMethodFieldIsEmpty"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4562"
+    },
+    {
+      "name": "tag",
+      "value": "C28586151"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeeFxDataWithPayerHasErrorWhenDeliveryMethodFieldIsEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetFeeFXDataWithPayer when DeliveryMethod field is empty\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeeFxDataWithPayerHasErrorWhenDeliveryMethodFieldIsEmpty",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeeFXDataWithPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "8d50c852a90349438a0f2761968b55d0-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "973c81ca4a5e4c48b62f2523cfa3b68d-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215031716,
+          "stop": 1596215032037
+        },
+        {
+          "name": "2 - Check that response has 'Delivery method is required.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215032037,
+          "stop": 1596215032037
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dd0e18e648f74dfe8a541951e0cb8b26-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215031706,
+      "stop": 1596215032491
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215031706,
+  "stop": 1596215032491
+}

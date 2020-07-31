@@ -1,0 +1,122 @@
+{
+  "uuid": "87f74dc9-125f-469b-aef7-67e886d01519-tr-0-1139",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationKEYSTONEBANKPLC",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationKEYSTONEBANKPLC",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationKEYSTONEBANKPLC"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4453"
+    },
+    {
+      "name": "tag",
+      "value": "C65070317"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationKEYSTONEBANKPLC",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response return the name of the account owner for KEYSTONE BANK PLC\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationKEYSTONEBANKPLC",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Keystone Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "fe0cba9749a245c184d5acf16a3694ee-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "ce4eb0d722324b2e9de19c2da3289801-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215174994,
+          "stop": 1596215182412
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  EVANS OGECHI AUGUSTA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215182412,
+          "stop": 1596215182412
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dc08f63e77414fffb4ec0b4f5044bb82-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215174983,
+      "stop": 1596215182882
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215174983,
+  "stop": 1596215182882
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "da86623b-9573-4d6f-9424-5ccfbcdc0937-tr-0-1036",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidDeliveryMethodField",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules.CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidDeliveryMethodField",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidDeliveryMethodField"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayerRoundingRules"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4538"
+    },
+    {
+      "name": "tag",
+      "value": "C19355904"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidDeliveryMethodField",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if the GetPayerRoundingRules () does not display the response of 'Round Receiving Amount Nearest Multiple' rules when 2 delivery methods are entered.\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayerRoundingRulesResponseWithInvalidDeliveryMethodField",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayerRoundingRules()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "ad2bcfc5b63d4f7fa572e96b83e3ae13-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayerRoundingRules'",
+              "source": "b0a2062f650649f38e7395881d30cc80-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215066238,
+          "stop": 1596215066543
+        },
+        {
+          "name": "2 - The response should display following error message: Invalid Delivery Method.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215066543,
+          "stop": 1596215066543
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ef816dc7ac8b4b008b7427b484ce8bfb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215066238,
+      "stop": 1596215066995
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215066238,
+  "stop": 1596215066995
+}

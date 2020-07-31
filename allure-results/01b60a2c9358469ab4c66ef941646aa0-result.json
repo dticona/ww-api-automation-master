@@ -1,0 +1,158 @@
+{
+  "uuid": "01cff6ab-a4c9-433d-9374-0e39cc206ce5-tr-0-1073",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodReleaseOrder.CheckReleaseOrderWithOperationalHoldStatus",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodReleaseOrder.CheckReleaseOrderWithOperationalHoldStatus",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodReleaseOrder"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckReleaseOrderWithOperationalHoldStatus"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodReleaseOrder"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4401"
+    },
+    {
+      "name": "tag",
+      "value": "C63248010"
+    }
+  ],
+  "links": [],
+  "name": "CheckReleaseOrderWithOperationalHoldStatus",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "There should be possible to release a Transactions that has HoldOrderFlag=1 (OperationalHold)\n",
+  "steps": [
+    {
+      "name": "CheckReleaseOrderWithOperationalHoldStatus",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Process a transaction that is on Operational Hold Status",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "459af0c7a9ae44869f5612ac703fd522-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "8ae8f63e8f6c487b9322c074f395c4f2-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215090705,
+          "stop": 1596215091370
+        },
+        {
+          "name": "2. Release the transaction using the ReleaseOrder method",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "5b8f81db7ebc417582bc270cec715a51-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "304ac60471a74ac48252869b1563278f-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215091370,
+          "stop": 1596215091716
+        },
+        {
+          "name": "3. Verify if the transaction staus is Unpaid and the message 'Released' on the response",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215091716,
+          "stop": 1596215091716
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "3df18563e731479fb757debac4b89755-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+          "source": "92ca24b06b80468abc333df38e4108ca-attachmentxml",
+          "type": "application/xml"
+        },
+        {
+          "name": "Console Output",
+          "source": "06f632aa12aa4fc6b3aa4361b45a844d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215090394,
+      "stop": 1596215092175
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215090394,
+  "stop": 1596215092176
+}

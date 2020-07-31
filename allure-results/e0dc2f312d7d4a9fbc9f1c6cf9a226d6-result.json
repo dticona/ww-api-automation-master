@@ -1,0 +1,122 @@
+{
+  "uuid": "f07832ad-9720-47d4-b31b-b9558c02b8db-tr-0-1007",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFxDataWhenPayerIdIsInvalid",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFxDataWhenPayerIdIsInvalid",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeeFxDataWhenPayerIdIsInvalid"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4565"
+    },
+    {
+      "name": "tag",
+      "value": "C28691049"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeeFxDataWhenPayerIdIsInvalid",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetFeeFXDataWithPayer when a Invalid Payer ID is provided on the request\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeeFxDataWhenPayerIdIsInvalid",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeeFXDataWithPayer()` request providing an invalid Agent ID",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "d4da1818ffbf4f7bb7c5464324795010-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "e22cdb0c02924f21b8a43bbfbf3cbc65-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215030181,
+          "stop": 1596215030476
+        },
+        {
+          "name": "2 - Check that response has 'Invalid Payer ID.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215030476,
+          "stop": 1596215030477
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6ba632fa5eee4d19b0610c62b611dddf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215030173,
+      "stop": 1596215030932
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215030173,
+  "stop": 1596215030932
+}

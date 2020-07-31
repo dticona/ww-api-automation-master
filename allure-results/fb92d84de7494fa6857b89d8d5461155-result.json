@@ -1,0 +1,122 @@
+{
+  "uuid": "3ca36bba-f2d4-4bc1-9c31-29a17e1cd4a8-tr-0-1054",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank.CheckErrorWhenGetPayersByBankResponseUsingEmptyCountriIdField",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank.CheckErrorWhenGetPayersByBankResponseUsingEmptyCountriIdField",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckErrorWhenGetPayersByBankResponseUsingEmptyCountriIdField"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetPayersByBank"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4595"
+    },
+    {
+      "name": "tag",
+      "value": "C28998069"
+    }
+  ],
+  "links": [],
+  "name": "CheckErrorWhenGetPayersByBankResponseUsingEmptyCountriIdField",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetPayersByBank() when CountryId field is Empty\n",
+  "steps": [
+    {
+      "name": "CheckErrorWhenGetPayersByBankResponseUsingEmptyCountriIdField",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetPayersByBank()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetPayersByBank'",
+              "source": "68edf687cc2241c6ad63ceb22022071a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetPayersByBank'",
+              "source": "c074e9b12bf94cb484ec98822191a901-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215070087,
+          "stop": 1596215070381
+        },
+        {
+          "name": "2 - The response should display following error message: Country Id is required.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215070381,
+          "stop": 1596215070382
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c728b7a3e0694a2ab3cccca955e48a68-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215070087,
+      "stop": 1596215070858
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215070087,
+  "stop": 1596215070858
+}

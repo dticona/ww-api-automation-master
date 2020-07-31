@@ -1,0 +1,122 @@
+{
+  "uuid": "efe07781-141d-4182-9d0a-332a2437de5a-tr-0-1136",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationSTANBICIBTCBANKPLC",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationSTANBICIBTCBANKPLC",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationSTANBICIBTCBANKPLC"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4456"
+    },
+    {
+      "name": "tag",
+      "value": "C65081169"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationSTANBICIBTCBANKPLC",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response return the name of the account owner for STANBIC IBTC BANK PLC\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationSTANBICIBTCBANKPLC",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Stanbic Ibtc Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "dc596dc018a840c29f387d738daf0c47-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "8ab78006eb8e4c24b6a6ece4ad0923d3-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215182893,
+          "stop": 1596215185263
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  KAFAYAT ORIADE MUSTAPHA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215185264,
+          "stop": 1596215185264
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "68ec94b92b354476b31534a935fe3a95-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215182884,
+      "stop": 1596215185721
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215182884,
+  "stop": 1596215185721
+}

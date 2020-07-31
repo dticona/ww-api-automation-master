@@ -1,0 +1,122 @@
+{
+  "uuid": "d2c3582d-932e-4818-8627-d34e36739a2e-tr-0-1019",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailInvalidCpas",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailInvalidCpas",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailInvalidCpas"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-4583"
+    },
+    {
+      "name": "tag",
+      "value": "C28819029"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailInvalidCpas",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message when an invalid CPAS is provided \n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailInvalidCpas",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetOrderDetail()` request providing an invalid Cpas",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "4b95e96736af49fe9fad3babcf49d261-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "d585eff5b4c643d084d9d1f06a187b35-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596214900055,
+          "stop": 1596214900362
+        },
+        {
+          "name": "2 - Check that the error message response contains Invalid CPAS ID.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596214900362,
+          "stop": 1596214900362
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8345eb5e6e494809a3d44595c69252eb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596214900055,
+      "stop": 1596214900837
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596214900055,
+  "stop": 1596214900837
+}

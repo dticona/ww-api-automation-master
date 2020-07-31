@@ -1,0 +1,122 @@
+{
+  "uuid": "5d02432f-9548-4204-83ba-816202c464c2-tr-0-1134",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationDiamondBankPlc",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationDiamondBankPlc",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationDiamondBankPlc"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4500"
+    },
+    {
+      "name": "tag",
+      "value": "C65581118"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationDiamondBankPlc",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response return the name of the account owner for Diamond Bank Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationDiamondBankPlc",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Diamond Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "b8afafd305a142d6aea9f6156d87adda-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "3c36f0a16ae4406abb98111f36dac0e2-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215163370,
+          "stop": 1596215165822
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  IHEAKA CHRISTIANA CHIKEZIE",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215165822,
+          "stop": 1596215165822
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "2098a3108df146048852e5a3ac61df08-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215163360,
+      "stop": 1596215166288
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215163360,
+  "stop": 1596215166288
+}

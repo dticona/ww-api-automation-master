@@ -1,0 +1,175 @@
+{
+  "uuid": "209097f6-d13b-49e9-a0e8-14c492d3d4ba-tr-0-1023",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForUnPaidTransaction",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForUnPaidTransaction",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailForUnPaidTransaction"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4865"
+    },
+    {
+      "name": "tag",
+      "value": "C86964404  "
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailForUnPaidTransaction",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  String lengths are both 6. Strings differ at index 1.\r\n  Expected: \"Unpaid\"\r\n  But was:  \"UNPAID\"\r\n  ------------^\r\n",
+    "trace": "   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.<>c__DisplayClass5_0.<CheckGetOrderDetailForUnPaidTransaction>b__2() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 135\r\n   at WhiteWingsApi.BaseTest.<>c__DisplayClass6_0.<LogStep>b__0() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at WhiteWingsApi.BaseTest.LogStep(String stepName, Action action) in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForUnPaidTransaction() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 132\r\n"
+  },
+  "stage": "finished",
+  "description": "Verify GetOrderDetail() returns the status of an UnPaid transaction\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailForUnPaidTransaction",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  String lengths are both 6. Strings differ at index 1.\r\n  Expected: \"Unpaid\"\r\n  But was:  \"UNPAID\"\r\n  ------------^\r\n",
+        "trace": "   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.<>c__DisplayClass5_0.<CheckGetOrderDetailForUnPaidTransaction>b__2() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 135\r\n   at WhiteWingsApi.BaseTest.<>c__DisplayClass6_0.<LogStep>b__0() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at WhiteWingsApi.BaseTest.LogStep(String stepName, Action action) in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailForUnPaidTransaction() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 132\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Process an Operational Hold transaction.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "f94bc7edc3c246668a8097bb2c975d99-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "8fc2c275c11a40e7a7462f1b7fbb8af6-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "33940235bfab4ce5b90af4840a883e19-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "f284d63b60e245999e1be3909b99985e-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596214897933,
+          "stop": 1596214898889
+        },
+        {
+          "name": "2 - Release the transation using the ReleaseOrder method",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "044f1647363a43b39286bf4cce51976c-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ReleaseOrder'",
+              "source": "8d022ee99b224c1cbad4e8cbb4df109d-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596214898889,
+          "stop": 1596214899206
+        },
+        {
+          "name": "3 - Verify if the GetOrderDetail() method return 'UnPaid' on OrderStatus field",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  String lengths are both 6. Strings differ at index 1.\r\n  Expected: \"Unpaid\"\r\n  But was:  \"UNPAID\"\r\n  ------------^\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.cs:line 394\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.cs:line 382\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.That.cs:line 247\r\n   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual) in C:\\src\\nunit\\nunit\\src\\NUnitFramework\\framework\\Assert.Equality.cs:line 128\r\n   at WhiteWingsApi.Tests.CheckMethodGetOrderDetail.<>c__DisplayClass5_0.<CheckGetOrderDetailForUnPaidTransaction>b__2() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\CheckMethodGetOrderDetail.cs:line 135\r\n   at WhiteWingsApi.BaseTest.<>c__DisplayClass6_0.<LogStep>b__0() in C:\\Users\\Trabajo\\Documents\\WW Source\\ww-api-automation-master\\WhiteWingsApi\\Tests\\BaseTest.cs:line 71\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "7f5d233ba33a4326bfdbb045a4ad33ed-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "69c779e922844e6cbe70ab7ac17ac8e0-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596214899206,
+          "stop": 1596214899582
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5fb99a99caaa4dd49fe284533f166cb8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596214897932,
+      "stop": 1596214900052
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596214897932,
+  "stop": 1596214900052
+}

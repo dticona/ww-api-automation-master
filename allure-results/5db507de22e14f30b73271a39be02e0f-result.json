@@ -1,0 +1,122 @@
+{
+  "uuid": "2e5c5e70-c34f-4718-b616-90c534fa3c3a-tr-0-1005",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFXDataWithPayerHasErrorWhenSendAmountCurrencyISOCodeFieldIsEmpty",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer.CheckResponseGetFeeFXDataWithPayerHasErrorWhenSendAmountCurrencyISOCodeFieldIsEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckResponseGetFeeFXDataWithPayerHasErrorWhenSendAmountCurrencyISOCodeFieldIsEmpty"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetFeeFXDataWithPayer"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4569"
+    },
+    {
+      "name": "tag",
+      "value": "C28691053"
+    }
+  ],
+  "links": [],
+  "name": "CheckResponseGetFeeFXDataWithPayerHasErrorWhenSendAmountCurrencyISOCodeFieldIsEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed in GetFeeFXDataWithPayer when SendAmountCurrencyISOCode field is empty\n",
+  "steps": [
+    {
+      "name": "CheckResponseGetFeeFXDataWithPayerHasErrorWhenSendAmountCurrencyISOCodeFieldIsEmpty",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetFeesFXDataWithoutPayer()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "5dd8e1f6dc25440c9bcb475d168d2b63-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer'",
+              "source": "1955138e46c64d9b905738e9d7194014-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215034131,
+          "stop": 1596215034443
+        },
+        {
+          "name": "2 - Check that response has 'Sender currency is required.' error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215034443,
+          "stop": 1596215034444
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "cf388841ad2049dbb2b1dbe24d180a43-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215034122,
+      "stop": 1596215034898
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215034122,
+  "stop": 1596215034898
+}

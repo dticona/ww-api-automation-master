@@ -1,0 +1,122 @@
+{
+  "uuid": "499daff5-ee6b-43ad-ab47-43041530b74b-tr-0-1132",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationZENITHINTERNATIONALBANKPLC",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation.CheckValidateVtnAccountValidationZENITHINTERNATIONALBANKPLC",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateVtnAccountValidationZENITHINTERNATIONALBANKPLC"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodVtnBankAccountValidation"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4498"
+    },
+    {
+      "name": "tag",
+      "value": "C65581116"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateVtnAccountValidationZENITHINTERNATIONALBANKPLC",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if VTNBankAccountValidation() method response returns the name of the account owner for ZENITH INTERNATIONAL BANK PLC\n",
+  "steps": [
+    {
+      "name": "CheckValidateVtnAccountValidationZENITHINTERNATIONALBANKPLC",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `VTNBankAccountValidation()` providing a valid bank account for Zenith International Bank Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "e861958f39e64c23a0673a3255e2da50-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/VTNBankAccountValidation'",
+              "source": "07a8539466c54e76a6abcdb5445dcc56-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215200382,
+          "stop": 1596215202757
+        },
+        {
+          "name": "2. Check response for method `VTNBankAccountValidation()` returns the account infromation  PHILIS ELUE OGBUEBUNU",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215202757,
+          "stop": 1596215202757
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "d105d0d064e04c879862d364280ff0da-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215200374,
+      "stop": 1596215203215
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215200374,
+  "stop": 1596215203216
+}

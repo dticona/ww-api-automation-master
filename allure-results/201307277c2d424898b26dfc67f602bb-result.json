@@ -1,0 +1,122 @@
+{
+  "uuid": "ea6ba628-1bb8-407e-afec-438ca47d2ba8-tr-0-1123",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountFirtsCityMonumentBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountFirtsCityMonumentBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountFirtsCityMonumentBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4433"
+    },
+    {
+      "name": "tag",
+      "value": "C65024063"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountFirtsCityMonumentBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response returns the name of the account owner for FIRST CITY MONUMENT BANK PLC Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountFirtsCityMonumentBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Fidelity Bank",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "8e2487de7e92476fa3d9366fd3305aaf-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "f9687be539a14fbc93e8fabe084c3d80-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215130172,
+          "stop": 1596215132336
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner ORJI LORETTA IFEOMA",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215132336,
+          "stop": 1596215132336
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "773699da8fd548ddab5c12c491d11308-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215130163,
+      "stop": 1596215132799
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215130163,
+  "stop": 1596215132799
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "95d50edd-6082-4be0-8e53-22bcff4ccbce-tr-0-1118",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountUnitedBankForAfrica",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountUnitedBankForAfrica",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountUnitedBankForAfrica"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4437"
+    },
+    {
+      "name": "tag",
+      "value": "C64889585"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountUnitedBankForAfrica",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response return the name of the account owner for United Bank For Africa Plc\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountUnitedBankForAfrica",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for United Bank For Africa Plc",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "ef1ec7b95dfe45879c75aedfaa4d5667-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "d4a9174ba195490d8fdaf1f12ed3bcc8-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215144463,
+          "stop": 1596215146346
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner GBADAMASI RASIDAT AYONI",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215146346,
+          "stop": 1596215146346
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b368fa76101f45a8b57d3b907365cab5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215144454,
+      "stop": 1596215146808
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215144454,
+  "stop": 1596215146808
+}

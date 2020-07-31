@@ -1,0 +1,122 @@
+{
+  "uuid": "bc3879f5-99e9-4749-baf5-ed69aca4b567-tr-0-1020",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailWithEmptyCpasId",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail.CheckGetOrderDetailWithEmptyCpasId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckGetOrderDetailWithEmptyCpasId"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetOrderDetail"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-4582"
+    },
+    {
+      "name": "tag",
+      "value": "C28819028"
+    }
+  ],
+  "links": [],
+  "name": "CheckGetOrderDetailWithEmptyCpasId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed on GetOrderDetail when CpasId field is empty\n",
+  "steps": [
+    {
+      "name": "CheckGetOrderDetailWithEmptyCpasId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetOrderDetail()` request providing empty Cpas",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "80da5aec50574fc48ea8e24ce2917d3a-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetOrderDetail'",
+              "source": "9d55c63c60e447ceb30bf4b441aa40ab-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596221992495,
+          "stop": 1596221992788
+        },
+        {
+          "name": "2 - Check that the error message response contains CPAS Id is required.",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596221992788,
+          "stop": 1596221992789
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "4f975a615a7040388ddaf6aa9a84de68-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596221992494,
+      "stop": 1596221993243
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596221992494,
+  "stop": 1596221993244
+}

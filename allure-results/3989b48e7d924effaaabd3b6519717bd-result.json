@@ -1,0 +1,122 @@
+{
+  "uuid": "4535a5c4-3c8b-4d7f-9d3c-3fb8a9af3013-tr-0-1112",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountWithInvalidBankAccountNumber",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountWithInvalidBankAccountNumber",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountWithInvalidBankAccountNumber"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "QGIN-3952"
+    },
+    {
+      "name": "tag",
+      "value": "C18083685"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountWithInvalidBankAccountNumber",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if an error message is displayed when an invalid Account Number is used\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountWithInvalidBankAccountNumber",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Make a request to `ValidateBitPesaAccount()` providing a invalid bank account",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "8fc0fd1d30884476a1bb73e0ea6f1ad1-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "6f5b241f868547628a838503e6446c83-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215148990,
+          "stop": 1596215152795
+        },
+        {
+          "name": "2 - Check response for method `ValidateBitPesaAccount()` have error message 'Invalid Account'",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215152795,
+          "stop": 1596215152796
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3e2f24cb09b2467fac34a67f7c2c0f8a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215148981,
+      "stop": 1596215153270
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215148981,
+  "stop": 1596215153270
+}

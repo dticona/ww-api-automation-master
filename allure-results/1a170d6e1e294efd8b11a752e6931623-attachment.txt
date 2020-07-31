@@ -1,0 +1,2 @@
+Error while updating Test Rail Run '-1'. Error:
+TestRail API returned HTTP 401 ("Authentication failed: invalid or missing user/password or session cookie.")

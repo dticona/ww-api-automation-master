@@ -1,0 +1,122 @@
+{
+  "uuid": "4c565d7b-6e8a-4918-970d-510ca679d931-tr-0-1051",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules.CheckAgencyHavePromotionRules",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules.CheckAgencyHavePromotionRules",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAgencyHavePromotionRules"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodGetReceipientPromotionRules"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-4602"
+    },
+    {
+      "name": "tag",
+      "value": "C29448241"
+    }
+  ],
+  "links": [],
+  "name": "CheckAgencyHavePromotionRules",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if GetReceipientPromotionRules() response shows detail information of PromotionRules\n",
+  "steps": [
+    {
+      "name": "CheckAgencyHavePromotionRules",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run the `GetReceipientPromotionRules()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetReceipientPromotionRules'",
+              "source": "8903775356b043aebc02f8c1f6be6459-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetReceipientPromotionRules'",
+              "source": "c86fee16bebe48f79f6cd0d00af6e1fa-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215073249,
+          "stop": 1596215073574
+        },
+        {
+          "name": "2 - Check that response contains correct PromotionRules",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215073597,
+          "stop": 1596215073599
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "69344ce3b3e847d480a3832d6e69e50c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215073241,
+      "stop": 1596215074064
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215073241,
+  "stop": 1596215074065
+}

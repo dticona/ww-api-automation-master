@@ -1,0 +1,184 @@
+{
+  "uuid": "556b660a-b202-4dea-9b9a-8c5fb53b1491-tr-0-1066",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckTransactionCanBeCancelledByCancelOrderRequest",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest.CheckTransactionCanBeCancelledByCancelOrderRequest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckTransactionCanBeCancelledByCancelOrderRequest"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodCancelOrderRequest"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "qgin-3928"
+    },
+    {
+      "name": "tag",
+      "value": "C1077424"
+    }
+  ],
+  "links": [],
+  "name": "CheckTransactionCanBeCancelledByCancelOrderRequest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Cancel transaction from New Retailer Portal by CancelOrderRequest method.\n",
+  "steps": [
+    {
+      "name": "CheckTransactionCanBeCancelledByCancelOrderRequest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1 - Run 'CreateNewCpasId()' request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "424383b1817948bca2a3d04149a4ce20-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CreateNewCpasId'",
+              "source": "26d65a7d17d04d6b87cbc16f3c41aba2-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215020009,
+          "stop": 1596215020330
+        },
+        {
+          "name": "2 - Run the `ProcessTransaction()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "1907c4c693d94d7e91fb7bb543bb3a5b-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ProcessTransaction'",
+              "source": "2d456b72ec72417cb75d16ad80dbdb62-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215020361,
+          "stop": 1596215021027
+        },
+        {
+          "name": "3 - Run the `CancelOrderRequest()` request on the soap API",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "79a6186575d04022ae91a39273f1a0fd-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/GetCancellationReasonsList'",
+              "source": "6b98f0e892ee4f4bb4ecad8e8448a3b2-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "dc891055513d42b0be1c4659aba3d5d1-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/CancelOrderRequest'",
+              "source": "a428b7020a9e4aa3bc7831834b707ee9-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215021027,
+          "stop": 1596215021835
+        },
+        {
+          "name": "4 - Check 'Transaction is Cancelled Successfully' Error message is returned",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215021835,
+          "stop": 1596215021844
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f20d5dc9c65f4c1bb033546a3b7b5065-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215020009,
+      "stop": 1596215022307
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215020009,
+  "stop": 1596215022307
+}

@@ -1,0 +1,122 @@
+{
+  "uuid": "4c92e255-08ab-450d-a82e-1f681028d278-tr-0-1122",
+  "historyId": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountFidelityBank",
+  "fullName": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount.CheckValidateBitPesaAccountFidelityBank",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DANIPC"
+    },
+    {
+      "name": "testClass",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckValidateBitPesaAccountFidelityBank"
+    },
+    {
+      "name": "package",
+      "value": "WhiteWingsApi.Tests.CheckMethodValidateBitPesaAccount"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "WhiteWings"
+    },
+    {
+      "name": "tag",
+      "value": "MTSQ-4432"
+    },
+    {
+      "name": "tag",
+      "value": "C65024064"
+    }
+  ],
+  "links": [],
+  "name": "CheckValidateBitPesaAccountFidelityBank",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "description": "Verify if ValidateBitPesaAccount() method response returns the name of the account owner for FIDELITY BANK PLC Nigeria\n",
+  "steps": [
+    {
+      "name": "CheckValidateBitPesaAccountFidelityBank",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "1. Make a request to `ValidateBitPesaAccount()` providing a valid bank account for Fidelity Bank",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Request for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "093b127738074eb6b4db7dc91331e81c-attachmentxml",
+              "type": "application/xml"
+            },
+            {
+              "name": "Response for soap method: 'http://tempuri.org/IWWCDTC/ValidateBitPesaAccount'",
+              "source": "6cb7346bd6c6444eab90fa94ad211b3b-attachmentxml",
+              "type": "application/xml"
+            }
+          ],
+          "parameters": [],
+          "start": 1596215124448,
+          "stop": 1596215126708
+        },
+        {
+          "name": "2. Check response for method `ValidateBitPesaAccount()` returns the account owner EKUE ANDREW IFALUYI",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1596215126708,
+          "stop": 1596215126708
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a1db1e6a5e9a42feb34188b114037bce-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1596215124437,
+      "stop": 1596215127190
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1596215124437,
+  "stop": 1596215127190
+}

@@ -1,0 +1,76 @@
+{
+  "uuid": "e89bfc4e-be50-49c3-b74d-aeb18f0e0bdd-tc-0-1076",
+  "name": "WhiteWingsApi.Tests.CheckMethodSetTransactionNotes.CheckSetTransactionNotesIfNoteIsAdded",
+  "children": [
+    "c3531027-637b-4d52-a140-107b868e8271-tr-0-1077"
+  ],
+  "befores": [
+    {
+      "name": "FixtureSetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215097660,
+      "stop": 1596215097660
+    },
+    {
+      "name": "CreateNewCpasIdAndPrepareDataToProcessTransaction",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215097660,
+      "stop": 1596215097660
+    }
+  ],
+  "afters": [
+    {
+      "name": "TestMethodTearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215097660,
+      "stop": 1596215097660
+    },
+    {
+      "name": "FixtureTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1596215097660,
+      "stop": 1596215097660
+    }
+  ],
+  "links": [],
+  "start": 1596215095915,
+  "stop": 1596215097662
+}

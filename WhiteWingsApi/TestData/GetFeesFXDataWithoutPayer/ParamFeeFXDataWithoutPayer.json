@@ -1,0 +1,9 @@
+﻿{
+	"AgentId": "PRODTEST717",
+	"DeliveryOption": "OFFICE PICKUP",
+	"PaymentMethod": "CASH",
+	"RecipientCountry": "ESP",
+	"RecipientCurrency": "USD",
+	"SendAmount": "100",
+	"SendAmountCurrencyISOCode": "USD"
+}

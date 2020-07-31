@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WWCDTC" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IWWCDTC_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WWC.DTC.Contracts" />
+      <xsd:import schemaLocation="https://qa.bossrevmts.com:8088/WWCDTC.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWWCDTC_GetPayerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerList" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerListByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerListByCountry" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerListByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerListByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetSubPayerListByPayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubPayerListByPayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetSubPayerListByPayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubPayerListByPayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetSubPayerListByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubPayerListByCountry" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetSubPayerListByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubPayerListByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPointofContactListBySubpayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointofContactListBySubpayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPointofContactListBySubpayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPointofContactListBySubpayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerCommission_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerCommission" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerCommission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerCommissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetFxGivenPayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFxGivenPayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetFxGivenPayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFxGivenPayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetFeesFXDataWithoutPayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeesFXDataWithoutPayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetFeesFXDataWithoutPayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeesFXDataWithoutPayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetFeeFXDataWithPayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeeFXDataWithPayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetFeeFXDataWithPayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFeeFXDataWithPayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ProcessTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ProcessTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ReleaseOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ReleaseOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ContinueOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContinueOrder" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ContinueOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContinueOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetOrderStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderStatus" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetOrderStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CancelOrderRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelOrderRequest" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CancelOrderRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelOrderRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetBankByPayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBankByPayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetBankByPayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBankByPayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayersByBank_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayersByBank" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayersByBank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayersByBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetBanksByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanksByCountry" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetBanksByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBanksByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CreateSender_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSender" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CreateSender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_UpdateSender_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSender" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_UpdateSender_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSenderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CreateRecipient_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRecipient" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CreateRecipient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRecipientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_UpdateRecipient_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRecipient" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_UpdateRecipient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRecipientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetSenderGivenID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSenderGivenID" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetSenderGivenID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSenderGivenIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetRecipientGivenID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecipientGivenID" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetRecipientGivenID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecipientGivenIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetCountryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryList" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetCountryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetStateListByCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStateListByCountry" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetStateListByCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStateListByCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetCityByState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityByState" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetCityByState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityByStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CreateNewCpasId_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewCpasId" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_CreateNewCpasId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewCpasIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_SaveCustomerIdentification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerIdentification" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_SaveCustomerIdentification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerIdentificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetReceipientPromotionRules_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceipientPromotionRules" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetReceipientPromotionRules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReceipientPromotionRulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_SetTransactionNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetTransactionNote" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_SetTransactionNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetTransactionNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetTransactionNotes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionNotes" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetTransactionNotes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_MigrateAgent_InputMessage">
+    <wsdl:part name="parameters" element="tns:MigrateAgent" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_MigrateAgent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MigrateAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateMFSAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateMFSAccount" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateMFSAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateMFSAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateMFSBankAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateMFSBankAccount" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateMFSBankAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateMFSBankAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateTransferToAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTransferToAccount" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateTransferToAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateTransferToAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateBitPesaAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBitPesaAccount" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateBitPesaAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBitPesaAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerRoundingRules_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerRoundingRules" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetPayerRoundingRules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayerRoundingRulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_UpdateHoldStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHoldStatus" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_UpdateHoldStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHoldStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetNotesByAgent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotesByAgent" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetNotesByAgent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotesByAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_VTNBankAccountValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:VTNBankAccountValidation" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_VTNBankAccountValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VTNBankAccountValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetCancellationReasonsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCancellationReasonsList" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetCancellationReasonsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCancellationReasonsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateBancoIndustrialAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBancoIndustrialAccount" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_ValidateBancoIndustrialAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateBancoIndustrialAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetBankBranchByPayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBankBranchByPayer" />
+  </wsdl:message>
+  <wsdl:message name="IWWCDTC_GetBankBranchByPayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBankBranchByPayerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWWCDTC">
+    <wsdl:operation name="GetPayerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerList" message="tns:IWWCDTC_GetPayerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerListResponse" message="tns:IWWCDTC_GetPayerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayerListByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerListByCountry" message="tns:IWWCDTC_GetPayerListByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerListByCountryResponse" message="tns:IWWCDTC_GetPayerListByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubPayerListByPayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetSubPayerListByPayer" message="tns:IWWCDTC_GetSubPayerListByPayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetSubPayerListByPayerResponse" message="tns:IWWCDTC_GetSubPayerListByPayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubPayerListByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetSubPayerListByCountry" message="tns:IWWCDTC_GetSubPayerListByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetSubPayerListByCountryResponse" message="tns:IWWCDTC_GetSubPayerListByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointofContactListBySubpayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetPointofContactListBySubpayer" message="tns:IWWCDTC_GetPointofContactListBySubpayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetPointofContactListBySubpayerResponse" message="tns:IWWCDTC_GetPointofContactListBySubpayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayerCommission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerCommission" message="tns:IWWCDTC_GetPayerCommission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerCommissionResponse" message="tns:IWWCDTC_GetPayerCommission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFxGivenPayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetFxGivenPayer" message="tns:IWWCDTC_GetFxGivenPayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetFxGivenPayerResponse" message="tns:IWWCDTC_GetFxGivenPayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeesFXDataWithoutPayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer" message="tns:IWWCDTC_GetFeesFXDataWithoutPayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayerResponse" message="tns:IWWCDTC_GetFeesFXDataWithoutPayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeeFXDataWithPayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer" message="tns:IWWCDTC_GetFeeFXDataWithPayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayerResponse" message="tns:IWWCDTC_GetFeeFXDataWithPayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ProcessTransaction" message="tns:IWWCDTC_ProcessTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ProcessTransactionResponse" message="tns:IWWCDTC_ProcessTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ReleaseOrder" message="tns:IWWCDTC_ReleaseOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ReleaseOrderResponse" message="tns:IWWCDTC_ReleaseOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContinueOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ContinueOrder" message="tns:IWWCDTC_ContinueOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ContinueOrderResponse" message="tns:IWWCDTC_ContinueOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetOrderStatus" message="tns:IWWCDTC_GetOrderStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetOrderStatusResponse" message="tns:IWWCDTC_GetOrderStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrderRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/CancelOrderRequest" message="tns:IWWCDTC_CancelOrderRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/CancelOrderRequestResponse" message="tns:IWWCDTC_CancelOrderRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetOrderDetail" message="tns:IWWCDTC_GetOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetOrderDetailResponse" message="tns:IWWCDTC_GetOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBankByPayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetBankByPayer" message="tns:IWWCDTC_GetBankByPayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetBankByPayerResponse" message="tns:IWWCDTC_GetBankByPayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayersByBank">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetPayersByBank" message="tns:IWWCDTC_GetPayersByBank_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetPayersByBankResponse" message="tns:IWWCDTC_GetPayersByBank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBanksByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetBanksByCountry" message="tns:IWWCDTC_GetBanksByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetBanksByCountryResponse" message="tns:IWWCDTC_GetBanksByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSender">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/CreateSender" message="tns:IWWCDTC_CreateSender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/CreateSenderResponse" message="tns:IWWCDTC_CreateSender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSender">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/UpdateSender" message="tns:IWWCDTC_UpdateSender_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/UpdateSenderResponse" message="tns:IWWCDTC_UpdateSender_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRecipient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/CreateRecipient" message="tns:IWWCDTC_CreateRecipient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/CreateRecipientResponse" message="tns:IWWCDTC_CreateRecipient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRecipient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/UpdateRecipient" message="tns:IWWCDTC_UpdateRecipient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/UpdateRecipientResponse" message="tns:IWWCDTC_UpdateRecipient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSenderGivenID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetSenderGivenID" message="tns:IWWCDTC_GetSenderGivenID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetSenderGivenIDResponse" message="tns:IWWCDTC_GetSenderGivenID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecipientGivenID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetRecipientGivenID" message="tns:IWWCDTC_GetRecipientGivenID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetRecipientGivenIDResponse" message="tns:IWWCDTC_GetRecipientGivenID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetCountryList" message="tns:IWWCDTC_GetCountryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetCountryListResponse" message="tns:IWWCDTC_GetCountryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListByCountry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetStateListByCountry" message="tns:IWWCDTC_GetStateListByCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetStateListByCountryResponse" message="tns:IWWCDTC_GetStateListByCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityByState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetCityByState" message="tns:IWWCDTC_GetCityByState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetCityByStateResponse" message="tns:IWWCDTC_GetCityByState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewCpasId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/CreateNewCpasId" message="tns:IWWCDTC_CreateNewCpasId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/CreateNewCpasIdResponse" message="tns:IWWCDTC_CreateNewCpasId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCustomerIdentification">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/SaveCustomerIdentification" message="tns:IWWCDTC_SaveCustomerIdentification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/SaveCustomerIdentificationResponse" message="tns:IWWCDTC_SaveCustomerIdentification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReceipientPromotionRules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetReceipientPromotionRules" message="tns:IWWCDTC_GetReceipientPromotionRules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetReceipientPromotionRulesResponse" message="tns:IWWCDTC_GetReceipientPromotionRules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetTransactionNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/SetTransactionNote" message="tns:IWWCDTC_SetTransactionNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/SetTransactionNoteResponse" message="tns:IWWCDTC_SetTransactionNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionNotes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetTransactionNotes" message="tns:IWWCDTC_GetTransactionNotes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetTransactionNotesResponse" message="tns:IWWCDTC_GetTransactionNotes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MigrateAgent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/MigrateAgent" message="tns:IWWCDTC_MigrateAgent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/MigrateAgentResponse" message="tns:IWWCDTC_MigrateAgent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateMFSAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ValidateMFSAccount" message="tns:IWWCDTC_ValidateMFSAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ValidateMFSAccountResponse" message="tns:IWWCDTC_ValidateMFSAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateMFSBankAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ValidateMFSBankAccount" message="tns:IWWCDTC_ValidateMFSBankAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ValidateMFSBankAccountResponse" message="tns:IWWCDTC_ValidateMFSBankAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTransferToAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ValidateTransferToAccount" message="tns:IWWCDTC_ValidateTransferToAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ValidateTransferToAccountResponse" message="tns:IWWCDTC_ValidateTransferToAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBitPesaAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ValidateBitPesaAccount" message="tns:IWWCDTC_ValidateBitPesaAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ValidateBitPesaAccountResponse" message="tns:IWWCDTC_ValidateBitPesaAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayerRoundingRules">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerRoundingRules" message="tns:IWWCDTC_GetPayerRoundingRules_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetPayerRoundingRulesResponse" message="tns:IWWCDTC_GetPayerRoundingRules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHoldStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/UpdateHoldStatus" message="tns:IWWCDTC_UpdateHoldStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/UpdateHoldStatusResponse" message="tns:IWWCDTC_UpdateHoldStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNotesByAgent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetNotesByAgent" message="tns:IWWCDTC_GetNotesByAgent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetNotesByAgentResponse" message="tns:IWWCDTC_GetNotesByAgent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VTNBankAccountValidation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/VTNBankAccountValidation" message="tns:IWWCDTC_VTNBankAccountValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/VTNBankAccountValidationResponse" message="tns:IWWCDTC_VTNBankAccountValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationReasonsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetCancellationReasonsList" message="tns:IWWCDTC_GetCancellationReasonsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetCancellationReasonsListResponse" message="tns:IWWCDTC_GetCancellationReasonsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBancoIndustrialAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/ValidateBancoIndustrialAccount" message="tns:IWWCDTC_ValidateBancoIndustrialAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/ValidateBancoIndustrialAccountResponse" message="tns:IWWCDTC_ValidateBancoIndustrialAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBankBranchByPayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWWCDTC/GetBankBranchByPayer" message="tns:IWWCDTC_GetBankBranchByPayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWWCDTC/GetBankBranchByPayerResponse" message="tns:IWWCDTC_GetBankBranchByPayer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWWCDTC" type="tns:IWWCDTC">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IWWCDTC_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPayerList">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetPayerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayerListByCountry">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetPayerListByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubPayerListByPayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetSubPayerListByPayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubPayerListByCountry">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetSubPayerListByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointofContactListBySubpayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetPointofContactListBySubpayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayerCommission">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetPayerCommission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFxGivenPayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetFxGivenPayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeesFXDataWithoutPayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetFeesFXDataWithoutPayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeeFXDataWithPayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetFeeFXDataWithPayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTransaction">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ProcessTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseOrder">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ReleaseOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContinueOrder">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ContinueOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderStatus">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetOrderStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrderRequest">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/CancelOrderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderDetail">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetOrderDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBankByPayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetBankByPayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayersByBank">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetPayersByBank" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanksByCountry">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetBanksByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSender">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/CreateSender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSender">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/UpdateSender" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRecipient">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/CreateRecipient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRecipient">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/UpdateRecipient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSenderGivenID">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetSenderGivenID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecipientGivenID">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetRecipientGivenID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryList">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetCountryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListByCountry">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetStateListByCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityByState">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetCityByState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewCpasId">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/CreateNewCpasId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCustomerIdentification">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/SaveCustomerIdentification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReceipientPromotionRules">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetReceipientPromotionRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetTransactionNote">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/SetTransactionNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionNotes">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetTransactionNotes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MigrateAgent">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/MigrateAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateMFSAccount">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ValidateMFSAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateMFSBankAccount">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ValidateMFSBankAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTransferToAccount">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ValidateTransferToAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBitPesaAccount">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ValidateBitPesaAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayerRoundingRules">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetPayerRoundingRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHoldStatus">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/UpdateHoldStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNotesByAgent">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetNotesByAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VTNBankAccountValidation">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/VTNBankAccountValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCancellationReasonsList">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetCancellationReasonsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateBancoIndustrialAccount">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/ValidateBancoIndustrialAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBankBranchByPayer">
+      <soap:operation soapAction="http://tempuri.org/IWWCDTC/GetBankBranchByPayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WWCDTC">
+    <wsdl:port name="BasicHttpBinding_IWWCDTC" binding="tns:BasicHttpBinding_IWWCDTC">
+      <soap:address location="https://qa.bossrevmts.com:8088/WWCDTC.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
